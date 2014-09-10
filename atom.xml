@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[KimYan's Blog]]></title>
-  <subtitle><![CDATA[如果今天是最后一天。]]></subtitle>
+  <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-10T11:04:08.949Z</updated>
+  <updated>2014-09-10T15:06:14.362Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[香港自由穷游记]]></title>
+    <link href="http://www.yanjinwen.com/2014/09/10/my-books-list/"/>
+    <id>http://www.yanjinwen.com/2014/09/10/my-books-list/</id>
+    <published>2014-09-10T14:59:27.000Z</published>
+    <updated>2014-09-10T15:05:54.000Z</updated>
+    <content type="html"><![CDATA[<p>香港我来了！我们的第一站是迪士尼，按照攻略，我们应该在机场乘坐巴士到东荟城，然后乘坐地铁到迪士尼。</p>
+<p>到达机场后，我刚刚拿出机场免费领取的地图和来之前打印好的笔记想看看怎么去巴士站，旁边的一个香港大妈就用普通话询问我是否需要帮助并且指引给我路线，而且还写了个字条画了个草图，大意巴士站在几号门下（门口），特别的真诚热情,类似的情况后面的几天几乎每天都能遇到。</p>
+<p>到香港的第一笔消费是在东荟城，东荟城下巴士后看到一家哈根达斯专卖店，30+港币3个球，而在唐山一个球就30+人民币了。</p>
+<p>在东荟城乘港铁东涌线一站到欣澳站，然后换乘迪士尼专线，迪士尼专线车厢布置具有迪士尼特色，可以说是到乐园的第一个景点。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>香港我来了！我们的第一站是迪士尼，按照攻略，我们应该在机场乘坐巴士到东荟城，然后乘坐地铁到迪士尼。</p>
+<p>到达机场后，我刚刚拿出机场免费领取的地图和来之前打印好的笔记想看看怎么去巴士站，旁边的一个香港大妈就用普通话询问我是否需要帮助并且指引给我路线，而且还写了个字条]]>
+    </summary>
+    
+      <category term="旅游" scheme="http://www.yanjinwen.com/tags/%E6%97%85%E6%B8%B8/"/>
+    
+      <category term="照片" scheme="http://www.yanjinwen.com/tags/%E7%85%A7%E7%89%87/"/>
+    
+      <category term="旅游" scheme="http://www.yanjinwen.com/categories/%E6%97%85%E6%B8%B8/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hexo+GitHub 独立博客搭建过程]]></title>

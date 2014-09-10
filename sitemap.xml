@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/2014/09/10/my-books-list/</loc>
+    <lastmod>2014-09-10T15:05:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/about/index.html</loc>
-    <lastmod>2014-09-10T09:15:11.000Z</lastmod>
+    <lastmod>2014-09-10T14:05:39.000Z</lastmod>
   </url>
   
   <url>
@@ -32,12 +37,12 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
+    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
+    <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
