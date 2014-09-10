@@ -1,0 +1,445 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo+GitHub 独立博客搭建过程 | KimYan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Kim Yan">
+    
+    <meta name="description" content="身为一名程序员，一直想动手搭建一个独立博客，记录自己的技术成长之路。第三方博客使用起来有点不自在，始终得不到真正的自由，也失去了自主的定制性和创造性。幸好，在编程界，有限制的地方，就会有解决限制的伟大而优秀的程序员们，他们被称之为黑客（Hacker），一群不服从教条、崇尚自由、喜欢挑战难题的技术狂人">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="KimYan&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="KimYan&#39;s Blog" title="KimYan&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="KimYan&#39;s Blog">KimYan&#39;s Blog</a></h1>
+				<h2 class="blog-motto">如果今天是我生命中的最后一天，我还会继续接下来要做的事情吗？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/08/20/my-blog-build/" title="Hexo+GitHub 独立博客搭建过程" itemprop="url">Hexo+GitHub 独立博客搭建过程</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://www.yanjinwen.com/about" title="Kim Yan" target="_blank" itemprop="author">Kim Yan</a>
+		
+  <p class="article-time">
+    <time datetime="2014-08-20T01:55:53.000Z" itemprop="datePublished"> 发表于 2014-08-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境准备（window）"><span class="toc-number">1.</span> <span class="toc-text">环境准备（window）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub_配置"><span class="toc-number">2.</span> <span class="toc-text">GitHub 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Hexo"><span class="toc-number">3.</span> <span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化"><span class="toc-number">4.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成静态页面"><span class="toc-number">5.</span> <span class="toc-text">生成静态页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_主题安装"><span class="toc-number">6.</span> <span class="toc-text">Hexo 主题安装</span></a></li></ol>
+		
+		</div>
+		
+		<p>身为一名程序员，一直想动手搭建一个独立博客，记录自己的技术成长之路。第三方博客使用起来有点不自在，始终得不到真正的自由，也失去了自主的定制性和创造性。幸好，在编程界，有限制的地方，就会有解决限制的伟大而优秀的程序员们，他们被称之为黑客（Hacker），一群不服从教条、崇尚自由、喜欢挑战难题的技术狂人。<a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> 和 <a href="https://github.com/" target="_blank" rel="external">GitHub</a> ，正是在这样的背景下诞生的优秀开源产物，有了它们，我的 Hacking 之路将会变得更加有趣。</p>
+<h2 id="环境准备（window）">环境准备（window）</h2>
+<p><strong>安装Node.js</strong></p>
+<p>到 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版本，然后一路安装即可。  </p>
+<p><strong>安装Git</strong></p>
+<p>Git的客户端很多，本人使用的是 <a href="http://msysgit.github.io/" target="_blank" rel="external">msysgit</a>，下载后设置下环境变量即可。  </p>
+<p><strong>安装编辑器（可选）</strong></p>
+<p><a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime Text 2</a>，支持各种编程语言和文件格式，Markdown自然也不会例外。除了这个之外，还有其他很多不错的编辑器选择，萝卜青菜，各有所爱了。这里提供个绿色版本下载 <a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.zip" target="_blank" rel="external">Sublime Text 2.0.2</a></p>
+<blockquote>
+<p>其他平台可以参考官方说明：<a href="http://hexo.io/docs/" target="_blank" rel="external">hexo installation</a></p>
+</blockquote>
+<h2 id="GitHub_配置">GitHub 配置</h2>
+<ol>
+<li>注册一个 <a href="https://github.com/" target="_blank" rel="external">GitHub</a>账号</li>
+<li>建立一个与GitHub用户名相同的 repo，repo 的名称必须为：your_user_name.github.io</li>
+<li>添加本地电脑SSH公钥到GitHub账户：Account settings -&gt; SSH Keys -&gt; Add SSH Key</li>
+</ol>
+<p><img src="http://kimpic.qiniudn.com/my_github_io.png" alt="my github io"></p>
+<p>前两步完成简单，着重介绍<strong>第3步</strong>：</p>
+<p>打开Git Bash，执行如下命令创建 SSH Key：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
+
+<blockquote>
+<p>执行成功后会在用户目录下生成一个<strong>.ssh</strong>目录，里面有<strong>id_rsa</strong>和<strong>id_rsa.pub</strong>两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。</p>
+</blockquote>
+<p>登录 GitHub，打开<strong>Account Settings</strong>选择<strong>SSH keys</strong>选项：<br>然后，点<strong>Add SSH Key</strong>按钮，填上任意Title，在Key文本框里粘贴<strong>id_rsa.pub</strong>文件的内容：</p>
+<p><img src="http://kimpic.qiniudn.com/my_github_sshkey.png" alt="My SSH Key"></p>
+<p>点击<strong>Add Key</strong>，大功告成：</p>
+<p><img src="http://kimpic.qiniudn.com/ssh_key_generated.png" alt="SSH Key Generated"></p>
+<p>最后验证一下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
+
+<p>若有问题，请重试，或参考官方文档：<br><a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a><br><a href="https://help.github.com/articles/error-permission-denied-publickey" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p>
+<h2 id="安装_Hexo">安装 Hexo</h2>
+<p>Node.js 和 Git 都安装好后，可执行如下命令安装 Hexo：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
+
+<h2 id="初始化">初始化</h2>
+<p>安装好 Hexo 后，cd 到指定目录下执行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div></pre></td></tr></table></figure>
+
+<p>Well done！至此，所有安装工作已完成啦。</p>
+<h2 id="生成静态页面">生成静态页面</h2>
+<p>cd 到你的 init 目录，执行如下命令，生成静态页面至 hexo/public/ 目录下。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><br>&gt; 命令必须要做 init 目录下执行。<br><br>## 本地启动<br>执行如下命令，启动本地服务，进行文章预览调试。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><br>打开浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以看到效果了。<br>&gt;珍爱程序员生命，请远离 IE 浏览器。<br><br>## 写文章<br>执行 new 命令，生成指定名称的文章至 hexo/source/_posts/postName.md。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] <span class="string">"postName"</span> <span class="comment">#新建文章</span></div></pre></td></tr></table></figure><br>其中 layout 是可选参数，默认值为 post。所有 layout 文件都可以在 scaffolds 目录下查看，这些文件名称就是 layout 名称。可以添加自己的 layout，方法就是添加一个文件即可，同时也可以编辑现有的 layout，比如 post 的 layout 默认是 hexo/scaffolds/post.md<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: </div><div class="line">date: </div><div class="line"><span class="header">tags: </span></div><div class="line">---</div></pre></td></tr></table></figure><br>&gt; 默认 post.md 文件没包含其他属性，例如 categories、description、photos etc，可以自行添加，以后就不用每次手动添加。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">title: postName            #文章页面上的显示名称，可以任意修改，不会出现在URL中</div><div class="line">date: 2014-08-16 15:30:16  #文章生成时间，一般不改，当然也可以任意修改</div><div class="line">categories:                #文章分类目录，可以为空，注意:后面有个空格</div><div class="line">tags:                      #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</div><div class="line"><span class="header">description:               #对本文的描述，覆盖全局配置文件中的 description 内容</span></div><div class="line">---</div><div class="line"><span class="header">#这里开始使用markdown格式输入你的正文。  </span></div><div class="line">或者使用以下格式代替 description 描述方式  </div><div class="line"><span class="header">#这里是摘要</span></div><div class="line"><span class="xml"><span class="comment">&lt;!--more--&gt;</span></span></div><div class="line"><span class="header">#这里是全文</span></div></pre></td></tr></table></figure>
+
+<h2 id="Hexo_主题安装">Hexo 主题安装</h2>
+<p>Hexo 的主题列表 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a><br>选择一个喜欢的主题，然后在 Hexo 根目录执行 git 命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/A-limon/pacman.git themes/pacman themes/pacman</div></pre></td></tr></table></figure>
+
+<p>安装完成后，打开 hexo/_config.yml，修改主题为 pacman<br>修改主题默认的属性打开 hexo/themes/_config.yml</p>
+<p>更新主题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> themes/pacman  </div><div class="line">$ git pull</div></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.yanjinwen.com/2014/08/20/my-blog-build/" data-title="Hexo+GitHub 独立博客搭建过程 | KimYan&#39;s Blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/09/10/hello-world/" title="Hello World">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hello World</span>
+</a>
+</div>
+
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境准备（window）"><span class="toc-number">1.</span> <span class="toc-text">环境准备（window）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub_配置"><span class="toc-number">2.</span> <span class="toc-text">GitHub 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Hexo"><span class="toc-number">3.</span> <span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化"><span class="toc-number">4.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成静态页面"><span class="toc-number">5.</span> <span class="toc-text">生成静态页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_主题安装"><span class="toc-number">6.</span> <span class="toc-text">Hexo 主题安装</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hey guy, I&#39;m KimYan, I&#39;m a self-taught programmer. <br/>
+			This blog tells my tales of how I approach programming and hacking.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1038923793" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		<a href="https://github.com/JinwenYan" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/87069513" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		<a href="mailto:kimyan.info@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://www.yanjinwen.com/about" target="_blank" title="Kim Yan">Kim Yan</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"kimyan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+
+
+
+  </body>
+</html>
