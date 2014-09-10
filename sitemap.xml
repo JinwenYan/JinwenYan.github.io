@@ -2,28 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/about/index.html</loc>
+    <lastmod>2014-09-10T09:15:11.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/resume/index.html</loc>
     <lastmod>2014-09-10T08:59:21.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/about/index.html</loc>
-    <lastmod>2014-09-10T08:54:37.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.yanjinwen.com/2014/08/20/my-blog-build/</loc>
     <lastmod>2014-09-10T05:57:13.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/2014/09/10/hello-world/</loc>
-    <lastmod>2014-09-10T04:21:22.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/2014/09/10/%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8%20Cmd%20-%20%E5%9C%A8%E7%BA%BF%20Markdown%20%E7%BC%96%E8%BE%91%E9%98%85%E8%AF%BB%E5%99%A8/</loc>
-    <lastmod>2014-09-10T04:07:00.000Z</lastmod>
   </url>
   
   <url>
@@ -42,12 +32,12 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
+    <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
+    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
