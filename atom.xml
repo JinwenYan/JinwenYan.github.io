@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[KimYan's Blog]]></title>
-  <subtitle><![CDATA[如果今天是我生命中的最后一天，我还会继续接下来要做的事情吗？#网站副标题]]></subtitle>
+  <subtitle><![CDATA[如果今天是最后一天。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-10T07:26:02.871Z</updated>
+  <updated>2014-09-10T08:43:53.961Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
