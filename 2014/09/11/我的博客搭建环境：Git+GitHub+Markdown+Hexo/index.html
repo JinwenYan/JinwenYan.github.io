@@ -1,0 +1,442 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>我的博客搭建环境：Git+GitHub+Markdown+Hexo | KimYan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="KimYan">
+    
+    <meta name="description" content="Git
+目前世界上最先进的分布式版本控制系统。不再担心写废，想到哪里，写到哪里。
+参考文献
+
+Git 简明指南
+Git 社区参考书
+
+GitHub
+各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。不再担心备份与远程协作，一切提交，均有记录。
+参考文献
+
+GotGitHub
+如何">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="KimYan&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="KimYan&#39;s Blog" title="KimYan&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="KimYan&#39;s Blog">KimYan&#39;s Blog</a></h1>
+				<h2 class="blog-motto">如果今天是我生命的最后一天，我还会继续吗？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">博客</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/" title="我的博客搭建环境：Git+GitHub+Markdown+Hexo" itemprop="url">我的博客搭建环境：Git+GitHub+Markdown+Hexo</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://www.yanjinwen.com/about" title="KimYan" target="_blank" itemprop="author">KimYan</a>
+		
+  <p class="article-time">
+    <time datetime="2014-09-11T07:32:27.000Z" itemprop="datePublished"> 发表于 2014-09-11</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献"><span class="toc-number">1.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub"><span class="toc-number">2.</span> <span class="toc-text">GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-1"><span class="toc-number">2.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown"><span class="toc-number">3.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-2"><span class="toc-number">3.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">4.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-3"><span class="toc-number">4.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
+<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
+<h3 id="参考文献">参考文献</h3>
+<ul>
+<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">Git 简明指南</a></li>
+<li><a href="http://git-scm.com/book" target="_blank" rel="external">Git 社区参考书</a></li>
+</ul>
+<h2 id="GitHub"><a href="https://github.com/" target="_blank" rel="external">GitHub</a></h2>
+<p>各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。<br>不再担心备份与远程协作，一切提交，均有记录。</p>
+<h3 id="参考文献-1">参考文献</h3>
+<ul>
+<li><a href="http://www.worldhello.net/gotgithub/" target="_blank" rel="external">GotGitHub</a></li>
+<li><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">如何高效利用 GitHub</a></li>
+</ul>
+<h2 id="Markdown"><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a></h2>
+<p>轻量级标记语言，置力于尽可能的易读写。<br>不再忧虑排版，专注写作。</p>
+<h3 id="参考文献-2">参考文献</h3>
+<ul>
+<li><a href="http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html" target="_blank" rel="external">Markdown 语法手册</a></li>
+<li><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">Markdown 简明语法</a></li>
+</ul>
+<h2 id="Hexo"><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a></h2>
+<p>快速、简单且功能强大的 Node.js 博客框架。<br>不再纠结在哪写博客。</p>
+<h3 id="参考文献-3">参考文献</h3>
+<ul>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">Hexo 你的博客</a></li>
+<li><a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">Hexo 系列教程</a></li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/博客/">博客</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/总结/">总结</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.yanjinwen.com/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/" data-title="我的博客搭建环境：Git+GitHub+Markdown+Hexo | KimYan&#39;s Blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/09/11/语言学习神器-Rosetta-Stone-v4-5-5/"  title="语言学习神器 Rosetta Stone v4.5.5">
+ <strong>下一篇：</strong><br/> 
+ <span>语言学习神器 Rosetta Stone v4.5.5
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献"><span class="toc-number">1.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub"><span class="toc-number">2.</span> <span class="toc-text">GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-1"><span class="toc-number">2.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown"><span class="toc-number">3.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-2"><span class="toc-number">3.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">4.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-3"><span class="toc-number">4.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/博客/" title="博客">博客<sup>1</sup></a></li>
+		
+			<li><a href="/categories/软件/资源/" title="资源">资源<sup>1</sup></a></li>
+		
+			<li><a href="/categories/软件/" title="软件">软件<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/总结/" title="总结">总结<sup>1</sup></a></li>
+		
+			<li><a href="/tags/学习/" title="学习">学习<sup>1</sup></a></li>
+		
+			<li><a href="/tags/English/" title="English">English<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <p class="asidetitle">听歌</p>
+<br />
+<embed src="http://www.xiami.com/widget/41054614_34615989_233_346_BD3E0F_008080_0/collectPlayer.swf" type="application/x-shockwave-flash" width="231" height="346" wmode="opaque"></embed>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hey guy, I&#39;m KimYan, I&#39;m a self-taught programmer. <br/>
+			This blog tells my tales of how I approach programming and hacking.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1038923793" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		<a href="https://github.com/JinwenYan" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/87069513" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		<a href="mailto:kimyan.info@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo" style="color:white;">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman" style="color:white;">Jacman</a> © 2014 
+		
+		<a href="http://www.yanjinwen.com/about" target="_blank" title="KimYan" style="color:white;">KimYan</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"kimyan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+
+
+
+  </body>
+</html>
