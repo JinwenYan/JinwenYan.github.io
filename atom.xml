@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-11T10:54:01.008Z</updated>
+  <updated>2014-09-11T10:58:28.097Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -185,75 +185,6 @@
       <category term="软件" scheme="http://www.yanjinwen.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
       <category term="资源" scheme="http://www.yanjinwen.com/categories/%E8%BD%AF%E4%BB%B6/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hexo+GitHub 独立博客搭建过程]]></title>
-    <link href="http://www.yanjinwen.com/2014/08/20/my-blog-build/"/>
-    <id>http://www.yanjinwen.com/2014/08/20/my-blog-build/</id>
-    <published>2014-08-20T01:55:53.000Z</published>
-    <updated>2014-09-10T05:57:13.000Z</updated>
-    <content type="html"><![CDATA[<p>身为一名程序员，一直想动手搭建一个独立博客，记录自己的技术成长之路。第三方博客使用起来有点不自在，始终得不到真正的自由，也失去了自主的定制性和创造性。幸好，在编程界，有限制的地方，就会有解决限制的伟大而优秀的程序员们，他们被称之为黑客（Hacker），一群不服从教条、崇尚自由、喜欢挑战难题的技术狂人。<a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> 和 <a href="https://github.com/" target="_blank" rel="external">GitHub</a> ，正是在这样的背景下诞生的优秀开源产物，有了它们，我的 Hacking 之路将会变得更加有趣。</p>
-<h2 id="环境准备（window）">环境准备（window）</h2>
-<h3 id="安装Node-js">安装Node.js</h3>
-<p>到 <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> 官网下载相应平台的最新版本，然后一路安装即可。  </p>
-<h3 id="安装Git">安装Git</h3>
-<p>Git的客户端很多，本人使用的是 <a href="http://msysgit.github.io/" target="_blank" rel="external">msysgit</a>，下载后设置下环境变量即可。  </p>
-<h3 id="安装编辑器（可选）">安装编辑器（可选）</h3>
-<p><a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime Text 2</a>，支持各种编程语言和文件格式，Markdown自然也不会例外。除了这个之外，还有其他很多不错的编辑器选择，萝卜青菜，各有所爱了。这里提供个绿色版本下载 <a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.zip" target="_blank" rel="external">Sublime Text 2.0.2</a></p>
-<blockquote>
-<p>其他平台可以参考官方说明：<a href="http://hexo.io/docs/" target="_blank" rel="external">hexo installation</a></p>
-</blockquote>
-<h2 id="GitHub_配置">GitHub 配置</h2>
-<ol>
-<li>注册一个 <a href="https://github.com/" target="_blank" rel="external">GitHub</a>账号</li>
-<li>建立一个与GitHub用户名相同的 repo，repo 的名称必须为：your_user_name.github.io</li>
-<li>添加本地电脑SSH公钥到GitHub账户：Account settings -&gt; SSH Keys -&gt; Add SSH Key</li>
-</ol>
-<p><img src="http://kimpic.qiniudn.com/my_github_io.png" alt="my github io"></p>
-<p>前两步完成简单，着重介绍<strong>第3步</strong>：</p>
-<p>打开Git Bash，执行如下命令创建 SSH Key：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
-
-<blockquote>
-<p>执行成功后会在用户目录下生成一个<strong>.ssh</strong>目录，里面有<strong>id_rsa</strong>和<strong>id_rsa.pub</strong>两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。</p>
-</blockquote>
-<p>登录 GitHub，打开<strong>Account Settings</strong>选择<strong>SSH keys</strong>选项：<br>然后，点<strong>Add SSH Key</strong>按钮，填上任意Title，在Key文本框里粘贴<strong>id_rsa.pub</strong>文件的内容：</p>
-<p><img src="http://kimpic.qiniudn.com/my_github_sshkey.png" alt="My SSH Key"></p>
-<p>点击<strong>Add Key</strong>，大功告成：</p>
-<p><img src="http://kimpic.qiniudn.com/ssh_key_generated.png" alt="SSH Key Generated"></p>
-<p>最后验证一下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
-
-<p>若有问题，请重试，或参考官方文档：<br><a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a><br><a href="https://help.github.com/articles/error-permission-denied-publickey" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p>
-<h2 id="安装_Hexo">安装 Hexo</h2>
-<p>Node.js 和 Git 都安装好后，可执行如下命令安装 Hexo：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
-
-<h2 id="初始化">初始化</h2>
-<p>安装好 Hexo 后，cd 到指定目录下执行初始化：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div></pre></td></tr></table></figure>
-
-<p>Well done！至此，所有安装工作已完成啦。</p>
-<h2 id="生成静态页面">生成静态页面</h2>
-<p>cd 到你的 init 目录，执行如下命令，生成静态页面至 hexo/public/ 目录下。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><br>&gt; 命令必须要做 init 目录下执行。<br><br>## 本地启动<br>执行如下命令，启动本地服务，进行文章预览调试。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><br>打开浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以看到效果了。<br>&gt;珍爱程序员生命，请远离 IE 浏览器。<br><br>## 写文章<br>执行 new 命令，生成指定名称的文章至 hexo/source/_posts/postName.md。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] <span class="string">"postName"</span> <span class="comment">#新建文章</span></div></pre></td></tr></table></figure><br>其中 layout 是可选参数，默认值为 post。所有 layout 文件都可以在 scaffolds 目录下查看，这些文件名称就是 layout 名称。可以添加自己的 layout，方法就是添加一个文件即可，同时也可以编辑现有的 layout，比如 post 的 layout 默认是 hexo/scaffolds/post.md<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: </div><div class="line">date: </div><div class="line"><span class="header">tags: </span></div><div class="line">---</div></pre></td></tr></table></figure><br>&gt; 默认 post.md 文件没包含其他属性，例如 categories、description、photos etc，可以自行添加，以后就不用每次手动添加。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">title: postName            #文章页面上的显示名称，可以任意修改，不会出现在URL中</div><div class="line">date: 2014-08-16 15:30:16  #文章生成时间，一般不改，当然也可以任意修改</div><div class="line">categories:                #文章分类目录，可以为空，注意:后面有个空格</div><div class="line">tags:                      #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</div><div class="line"><span class="header">description:               #对本文的描述，覆盖全局配置文件中的 description 内容</span></div><div class="line">---</div><div class="line"><span class="header">#这里开始使用markdown格式输入你的正文。  </span></div><div class="line">或者使用以下格式代替 description 描述方式  </div><div class="line"><span class="header">#这里是摘要</span></div><div class="line"><span class="xml"><span class="comment">&lt;!--more--&gt;</span></span></div><div class="line"><span class="header">#这里是全文</span></div></pre></td></tr></table></figure>
-
-<h2 id="Hexo_主题安装">Hexo 主题安装</h2>
-<p>Hexo 的主题列表 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a><br>选择一个喜欢的主题，然后在 Hexo 根目录执行 git 命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/A-limon/pacman.git themes/pacman themes/pacman</div></pre></td></tr></table></figure>
-
-<p>安装完成后，打开 hexo/_config.yml，修改主题为 pacman<br>修改主题默认的属性打开 hexo/themes/_config.yml</p>
-<p>更新主题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> themes/pacman  </div><div class="line">$ git pull</div></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p>身为一名程序员，一直想动手搭建一个独立博客，记录自己的技术成长之路。第三方博客使用起来有点不自在，始终得不到真正的自由，也失去了自主的定制性和创造性。幸好，在编程界，有限制的地方，就会有解决限制的伟大而优秀的程序员们，他们被称之为黑客（Hacker），一群不服从教条、崇尚自]]>
-    </summary>
-    
-      <category term="Hexo" scheme="http://www.yanjinwen.com/tags/Hexo/"/>
-    
-      <category term="Hexo" scheme="http://www.yanjinwen.com/categories/Hexo/"/>
     
   </entry>
   
