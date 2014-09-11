@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-11T10:58:28.097Z</updated>
+  <updated>2014-09-11T11:33:58.566Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -13,53 +13,6 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[我的博客搭建环境：Git+GitHub+Markdown+Hexo]]></title>
-    <link href="http://www.yanjinwen.com/2014/09/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%9AGit+GitHub+Markdown+Hexo/"/>
-    <id>http://www.yanjinwen.com/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/</id>
-    <published>2014-09-11T07:32:27.000Z</published>
-    <updated>2014-09-11T10:53:47.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
-<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
-<h3 id="参考文献">参考文献</h3>
-<ul>
-<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">Git 简明指南</a></li>
-<li><a href="http://git-scm.com/book" target="_blank" rel="external">Git 社区参考书</a></li>
-</ul>
-<h2 id="GitHub"><a href="https://github.com/" target="_blank" rel="external">GitHub</a></h2>
-<p>各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。<br>不再担心备份与远程协作，一切提交，均有记录。</p>
-<h3 id="参考文献-1">参考文献</h3>
-<ul>
-<li><a href="http://www.worldhello.net/gotgithub/" target="_blank" rel="external">GotGitHub</a></li>
-<li><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">如何高效利用 GitHub</a></li>
-</ul>
-<h2 id="Markdown"><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a></h2>
-<p>轻量级标记语言，置力于尽可能的易读写。<br>不再忧虑排版，专注写作。</p>
-<h3 id="参考文献-2">参考文献</h3>
-<ul>
-<li><a href="http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html" target="_blank" rel="external">Markdown 语法手册</a></li>
-<li><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">Markdown 简明语法</a></li>
-</ul>
-<h2 id="Hexo"><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a></h2>
-<p>快速、简单且功能强大的 Node.js 博客框架。<br>不再纠结在哪写博客。</p>
-<h3 id="参考文献-3">参考文献</h3>
-<ul>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">Hexo 你的博客</a></li>
-<li><a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">Hexo 系列教程</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
-<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
-<h3 i]]>
-    </summary>
-    
-      <category term="总结" scheme="http://www.yanjinwen.com/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="博客" scheme="http://www.yanjinwen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[语言学习神器 Rosetta Stone v4.5.5]]></title>
@@ -185,6 +138,53 @@
       <category term="软件" scheme="http://www.yanjinwen.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
       <category term="资源" scheme="http://www.yanjinwen.com/categories/%E8%BD%AF%E4%BB%B6/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[我的博客搭建环境：Git+GitHub+Markdown+Hexo]]></title>
+    <link href="http://www.yanjinwen.com/2014/09/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%9AGit+GitHub+Markdown+Hexo/"/>
+    <id>http://www.yanjinwen.com/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/</id>
+    <published>2014-09-10T23:32:27.000Z</published>
+    <updated>2014-09-11T11:33:50.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
+<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
+<h3 id="参考文献">参考文献</h3>
+<ul>
+<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">Git 简明指南</a></li>
+<li><a href="http://git-scm.com/book" target="_blank" rel="external">Git 社区参考书</a></li>
+</ul>
+<h2 id="GitHub"><a href="https://github.com/" target="_blank" rel="external">GitHub</a></h2>
+<p>各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。<br>不再担心备份与远程协作，一切提交，均有记录。</p>
+<h3 id="参考文献-1">参考文献</h3>
+<ul>
+<li><a href="http://www.worldhello.net/gotgithub/" target="_blank" rel="external">GotGitHub</a></li>
+<li><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">如何高效利用 GitHub</a></li>
+</ul>
+<h2 id="Markdown"><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a></h2>
+<p>轻量级标记语言，置力于尽可能的易读写。<br>不再忧虑排版，专注写作。</p>
+<h3 id="参考文献-2">参考文献</h3>
+<ul>
+<li><a href="http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html" target="_blank" rel="external">Markdown 语法手册</a></li>
+<li><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">Markdown 简明语法</a></li>
+</ul>
+<h2 id="Hexo"><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a></h2>
+<p>快速、简单且功能强大的 Node.js 博客框架。<br>不再纠结在哪写博客。</p>
+<h3 id="参考文献-3">参考文献</h3>
+<ul>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">Hexo 你的博客</a></li>
+<li><a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">Hexo 系列教程</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
+<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
+<h3 i]]>
+    </summary>
+    
+      <category term="总结" scheme="http://www.yanjinwen.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="博客" scheme="http://www.yanjinwen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
