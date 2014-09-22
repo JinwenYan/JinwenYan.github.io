@@ -4,24 +4,16 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>我的博客搭建环境：Git+GitHub+Markdown+Hexo | KimYan&#39;s Blog</title>
+    <title>Android 开发工具安装 | KimYan&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="KimYan">
     
-    <meta name="description" content="Git
-目前世界上最先进的分布式版本控制系统。不再担心写废，想到哪里，写到哪里。
-参考文献
+    <meta name="description" content="安装和配置 Android 开发工具。
+安装 Android 开发工具
+Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。
 
-Git 简明指南
-Git 社区参考书
-
-GitHub
-各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。不再担心备份与远程协作，一切提交，均有记录。
-参考文献
-
-GotGitHub
-如何">
+选择哪个 IDE 主要是基于个人的偏好，上面两个工具">
     
     
     
@@ -81,14 +73,14 @@ GotGitHub
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/" title="我的博客搭建环境：Git+GitHub+Markdown+Hexo" itemprop="url">我的博客搭建环境：Git+GitHub+Markdown+Hexo</a>
+      <a href="/2014/09/12/Android 开发工具安装/" title="Android 开发工具安装" itemprop="url">Android 开发工具安装</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://www.yanjinwen.com/about" title="KimYan" target="_blank" itemprop="author">KimYan</a>
 		
   <p class="article-time">
-    <time datetime="2014-09-10T23:32:27.000Z" itemprop="datePublished"> 发表于 2014-09-11</time>
+    <time datetime="2014-09-12T10:32:27.000Z" itemprop="datePublished"> 发表于 2014-09-12</time>
     
   </p>
 </header>
@@ -98,38 +90,29 @@ GotGitHub
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献"><span class="toc-number">1.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub"><span class="toc-number">2.</span> <span class="toc-text">GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-1"><span class="toc-number">2.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown"><span class="toc-number">3.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-2"><span class="toc-number">3.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">4.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-3"><span class="toc-number">4.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_开发工具"><span class="toc-number">1.</span> <span class="toc-text">安装 Android 开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#要求"><span class="toc-number">2.</span> <span class="toc-text">要求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#系统要求"><span class="toc-number">2.1.</span> <span class="toc-text">系统要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用_64-bit_Linux_系统的要求"><span class="toc-number">2.2.</span> <span class="toc-text">使用 64-bit Linux 系统的要求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_开发人员工具"><span class="toc-number">3.</span> <span class="toc-text">安装 Android 开发人员工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_SDK"><span class="toc-number">4.</span> <span class="toc-text">安装 Android SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在_Eclipse_中访问_Android_SDK_源代码"><span class="toc-number">5.</span> <span class="toc-text">在 Eclipse 中访问 Android SDK 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_Studio"><span class="toc-number">6.</span> <span class="toc-text">Android Studio</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为_Android_开发更新_Eclipse_IDE"><span class="toc-number">7.</span> <span class="toc-text">为 Android 开发更新 Eclipse IDE</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
-<p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
-<h3 id="参考文献">参考文献</h3>
-<ul>
-<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">Git 简明指南</a></li>
-<li><a href="http://git-scm.com/book" target="_blank" rel="external">Git 社区参考书</a></li>
-</ul>
-<h2 id="GitHub"><a href="https://github.com/" target="_blank" rel="external">GitHub</a></h2>
-<p>各类优秀开源项目托管地，自然而然各路大牛、hacker 也会在此出没。<br>不再担心备份与远程协作，一切提交，均有记录。</p>
-<h3 id="参考文献-1">参考文献</h3>
-<ul>
-<li><a href="http://www.worldhello.net/gotgithub/" target="_blank" rel="external">GotGitHub</a></li>
-<li><a href="http://www.yangzhiping.com/tech/github.html" target="_blank" rel="external">如何高效利用 GitHub</a></li>
-</ul>
-<h2 id="Markdown"><a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a></h2>
-<p>轻量级标记语言，置力于尽可能的易读写。<br>不再忧虑排版，专注写作。</p>
-<h3 id="参考文献-2">参考文献</h3>
-<ul>
-<li><a href="http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html" target="_blank" rel="external">Markdown 语法手册</a></li>
-<li><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">Markdown 简明语法</a></li>
-</ul>
-<h2 id="Hexo"><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a></h2>
-<p>快速、简单且功能强大的 Node.js 博客框架。<br>不再纠结在哪写博客。</p>
-<h3 id="参考文献-3">参考文献</h3>
-<ul>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">Hexo 你的博客</a></li>
-<li><a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">Hexo 系列教程</a></li>
-</ul>
+		<p>安装和配置 Android 开发工具。</p>
+<h2 id="安装_Android_开发工具">安装 Android 开发工具</h2>
+<p>Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。<br>这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。</p>
+<blockquote>
+<p>选择哪个 IDE 主要是基于个人的偏好，上面两个工具 Google 团队都会全面支持的。</p>
+</blockquote>
+<h2 id="要求">要求</h2>
+<h3 id="系统要求">系统要求</h3>
+<p>只要在一个合理大小的计算机上便可以完成 Android 开发。现代计算机推荐：2.6 GHz CPU，最少 8 GB 内存，一个 SSD 会显著加快 Android 模拟器的运行。</p>
+<h3 id="使用_64-bit_Linux_系统的要求">使用 64-bit Linux 系统的要求</h3>
+<p>Android SDK 是 32-bit 的，因此在 64-bit 的 Linux 系统下必须要安装<code>ia32-libs</code>的运行库，对于 Ubuntu 系统可以运行以下命令安装： </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Ubuntu 12.04</span></div><div class="line">apt-<span class="keyword">get</span> install ia32-libs</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.10</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5 lib32z1</div></pre></td></tr></table></figure>  
+
+<p>对于不同的 Linux 发行版请参考相应的技术文档。</p>
+<h2 id="安装_Android_开发人员工具">安装 Android 开发人员工具</h2>
+<h2 id="安装_Android_SDK">安装 Android SDK</h2>
+<h2 id="在_Eclipse_中访问_Android_SDK_源代码">在 Eclipse 中访问 Android SDK 源代码</h2>
+<h2 id="Android_Studio">Android Studio</h2>
+<h2 id="为_Android_开发更新_Eclipse_IDE">为 Android 开发更新 Eclipse IDE</h2>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -137,13 +120,13 @@ GotGitHub
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/博客/">博客</a>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/总结/">总结</a><a href="/tags/Git/">Git</a><a href="/tags/GitHub/">GitHub</a><a href="/tags/Markdown/">Markdown</a><a href="/tags/Hexo/">Hexo</a>
+  <span></span> <a href="/tags/总结/">总结</a><a href="/tags/Android/">Android</a>
   </div>
 
 </div>
@@ -151,7 +134,7 @@ GotGitHub
 
 <div class="article-share" id="share">
 
-  <div data-url="http://www.yanjinwen.com/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/" data-title="我的博客搭建环境：Git+GitHub+Markdown+Hexo | KimYan&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/" data-title="Android 开发工具安装 | KimYan&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -161,13 +144,21 @@ GotGitHub
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/09/11/语言学习神器-Rosetta-Stone-v4-5-5/" title="语言学习神器 Rosetta Stone v4.5.5">
+ <a href="/2014/09/13/Android 开发入门总结/" title="Android 开发入门总结">
   <strong>上一篇：</strong><br/>
   <span>
-  语言学习神器 Rosetta Stone v4.5.5</span>
+  Android 开发入门总结</span>
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2014/09/12/出来这半年/"  title="出来这半年">
+ <strong>下一篇：</strong><br/> 
+ <span>出来这半年
+</span>
+</a>
+</div>
 
 </nav>
 
@@ -183,7 +174,7 @@ GotGitHub
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献"><span class="toc-number">1.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub"><span class="toc-number">2.</span> <span class="toc-text">GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-1"><span class="toc-number">2.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown"><span class="toc-number">3.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-2"><span class="toc-number">3.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">4.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献-3"><span class="toc-number">4.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_开发工具"><span class="toc-number">1.</span> <span class="toc-text">安装 Android 开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#要求"><span class="toc-number">2.</span> <span class="toc-text">要求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#系统要求"><span class="toc-number">2.1.</span> <span class="toc-text">系统要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用_64-bit_Linux_系统的要求"><span class="toc-number">2.2.</span> <span class="toc-text">使用 64-bit Linux 系统的要求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_开发人员工具"><span class="toc-number">3.</span> <span class="toc-text">安装 Android 开发人员工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装_Android_SDK"><span class="toc-number">4.</span> <span class="toc-text">安装 Android SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在_Eclipse_中访问_Android_SDK_源代码"><span class="toc-number">5.</span> <span class="toc-text">在 Eclipse 中访问 Android SDK 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_Studio"><span class="toc-number">6.</span> <span class="toc-text">Android Studio</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为_Android_开发更新_Eclipse_IDE"><span class="toc-number">7.</span> <span class="toc-text">为 Android 开发更新 Eclipse IDE</span></a></li></ol>
  
   </div>
 
