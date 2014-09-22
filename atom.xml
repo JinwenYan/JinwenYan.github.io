@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-22T12:55:28.570Z</updated>
+  <updated>2014-09-22T12:59:54.709Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -48,7 +48,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/</id>
     <published>2014-09-12T10:32:27.000Z</published>
-    <updated>2014-09-22T12:55:22.000Z</updated>
+    <updated>2014-09-22T12:59:50.000Z</updated>
     <content type="html"><![CDATA[<p>安装和配置 Android 开发工具。</p>
 <h2 id="安装_Android_开发工具">安装 Android 开发工具</h2>
 <p>Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。<br>这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。</p>
@@ -64,8 +64,9 @@
 
 <p>Eclipse```启动程序（e.g. 在 window 下 <em>eclipse.exe</em>）。</p>
 <h3 id="更新现有的_Eclipse_IDE">更新现有的 Eclipse IDE</h3>
-<p>看(更新现有 Eclipse IDE 支持 Android 开发)[<a href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/#更新现有_Eclipse_IDE_支持_Android_开发]介绍怎样更新已存在的" target="_blank" rel="external">http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/#更新现有_Eclipse_IDE_支持_Android_开发]介绍怎样更新已存在的</a> Eclipse IDE 来支持 Android 开发。</p>
-<h2 id="安装_Android_SDK">安装 Android SDK</h2>
+<p>看<a href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/#更新现有_Eclipse_IDE_支持_Android_开发" target="_blank" rel="external">更新现有 Eclipse IDE 支持 Android 开发</a>介绍怎样更新已存在的 Eclipse IDE 来支持 Android 开发。</p>
+<h2 id="安装_Android_SDK_版本">安装 Android SDK 版本</h2>
+<h3 id="使用_Android_SDK_Manager">使用 Android SDK Manager</h3>
 <h2 id="在_Eclipse_中访问_Android_SDK_源代码">在 Eclipse 中访问 Android SDK 源代码</h2>
 <h2 id="Android_Studio">Android Studio</h2>
 <h2 id="更新现有_Eclipse_IDE_支持_Android_开发">更新现有 Eclipse IDE 支持 Android 开发</h2>
