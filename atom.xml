@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-23T04:47:32.544Z</updated>
+  <updated>2014-09-23T04:52:27.197Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -48,7 +48,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/</id>
     <published>2014-09-12T10:32:27.000Z</published>
-    <updated>2014-09-23T04:47:27.000Z</updated>
+    <updated>2014-09-23T04:52:18.000Z</updated>
     <content type="html"><![CDATA[<p>安装和配置 Android 开发工具。</p>
 <h2 id="安装_Android_开发工具">安装 Android 开发工具</h2>
 <p>Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。<br>这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。</p>
