@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-22T13:21:01.191Z</updated>
+  <updated>2014-09-23T02:49:21.319Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -48,7 +48,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/</id>
     <published>2014-09-12T10:32:27.000Z</published>
-    <updated>2014-09-22T13:20:57.000Z</updated>
+    <updated>2014-09-23T02:49:14.000Z</updated>
     <content type="html"><![CDATA[<p>安装和配置 Android 开发工具。</p>
 <h2 id="安装_Android_开发工具">安装 Android 开发工具</h2>
 <p>Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。<br>这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。</p>
@@ -60,10 +60,13 @@
 <p>只要在一个合理大小的计算机上便可以完成 Android 开发。现代计算机推荐：2.6 GHz CPU，最少 8 GB 内存，一个 SSD 会显著加快 Android 模拟器的运行。</p>
 <h3 id="使用_64-bit_Linux_系统的要求">使用 64-bit Linux 系统的要求</h3>
 <p>Android SDK 是 32-bit 的，因此在 64-bit 的 Linux 系统下必须要安装<code>ia32-libs</code>的运行库，对于 Ubuntu 系统可以运行以下命令安装：</p>
-<p><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Ubuntu 12.04</span></div><div class="line">apt-<span class="keyword">get</span> install ia32-libs</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.10</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5 lib32z1</div></pre></td></tr></table></figure><br>对于不同的 Linux 发行版请参考相应的技术文档。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Ubuntu 12.04</span></div><div class="line">apt-<span class="keyword">get</span> install ia32-libs</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.10</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5 lib32z1</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 14.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6:i386 libstdc++<span class="number">6</span>:i386 libfreetype6:i386 libglu1-mesa:i386 libcups2:i386 libglib2<span class="number">.0</span>-<span class="number">0</span>:i386 libpng12-<span class="number">0</span>:i386 libsm6:i386 libxrender1:i386 libfontconfig1:i386</div></pre></td></tr></table></figure>
+
+<p>对于不同的 Linux 发行版请参考相应的技术文档。</p>
 <h3 id="Linux_和_OpenGL_-_未能加载_libGL-so">Linux 和 OpenGL - 未能加载 libGL.so</h3>
 <p>在 Ubuntu 13.04 系统上也必须手动安装 OpenGL 支持，执行以下命令：</p>
-<p><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># <span class="operator"><span class="keyword">install</span> OpenGL support</span></div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> libgl1-mesa-dev</div></pre></td></tr></table></figure></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># <span class="operator"><span class="keyword">install</span> OpenGL support</span></div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> libgl1-mesa-dev</div></pre></td></tr></table></figure>
+
 <h2 id="安装_Android_开发人员工具">安装 Android 开发人员工具</h2>
 <h3 id="下载_Android_开发工具包">下载 Android 开发工具包</h3>
 <p>Google 提供了一个基于 Eclipse IDE 的捆绑包叫做 <em>Android Developer Tools</em>，这里有个链接可以找到 Google 提供的 Android 开发工具存档文件 <a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external">Getting the Android SDK</a></p>
@@ -73,7 +76,22 @@
 <p>看 <a href="#jump">“更新现有 Eclipse IDE 支持 Android 开发”</a> 介绍怎样更新已存在的 Eclipse IDE 来支持 Android 开发。</p>
 <h2 id="安装_Android_SDK_版本">安装 Android SDK 版本</h2>
 <h3 id="使用_Android_SDK_Manager">使用 Android SDK Manager</h3>
-<p><em>Android SDK Manager</em> 允许你去安装特定的 Android API。选择</p>
+<p><em>Android SDK Manager</em> 允许你去安装特定的 Android API。在 Eclipse 菜单项中选择 <em>Window</em> ——&gt; <em>Android SDK Manager</em> 或者运行安装目录 <em>tools/android</em> 程序。  </p>
+<p><img src="http://kimpic.qiniudn.com/android_sdk_manager_laucher.png" alt="Android SDK Manager"></p>
+<blockquote>
+<p>你也可以从 ADT 的本地安装目录 <em>SDK</em> 文件目录中找到启动程序。</p>
+</blockquote>
+<p><em>Android SDK Manager</em> 允许你安装和删除 Android 开发包。</p>
+<p>选择你想要安装的 <em>Android SDK</em> 版本，然后点击 <em>Install</em> 按钮执行安装。下面这张截图选择了 Android API 19 的平台版本：</p>
+<p><img src="http://kimpic.qiniudn.com/android_sdk_manager_download.png" alt="Android API 19 Version Download"></p>
+<p>点击 <em>Install</em> 按钮和接受许可协议安装所有选择的选项。安装完成后，关闭 <em>Android SDK Manager</em> 并重启 <em>Eclipse IDE</em>。</p>
+<h3 id="安装支持库（Support_Library）">安装支持库（Support Library）</h3>
+<p>支持库可以让低版本的 Android 设备兼容和使用高版本的 Android 平台所提供的一些基础功能。  </p>
+<p>在 <em>Android SDK Manager</em> 中选择 <em>Extras</em> 并安装 <em>Android Support Library</em>。</p>
+<p><img src="http://kimpic.qiniudn.com/android_sdk_manager_download1.png" alt="Android Support Library Download"></p>
+<blockquote>
+<p>Android 目前有几个版本的库，<code>v4</code>、<code>v7</code> 和 <code>v13</code> 版本，它们分别对应各自的 <em>Android API</em> 版本有效。例如，支持库<code>v7</code>工作于 <em>Android API</em> 版本号为 <strong>7</strong> 的设备。高版本的支持库也需要依赖于低版本的支持库才能正常工作。例如，支持库<code>v7</code>需要支持库<code>v4</code>。</p>
+</blockquote>
 <h2 id="在_Eclipse_中访问_Android_SDK_源代码">在 Eclipse 中访问 Android SDK 源代码</h2>
 <h2 id="Android_Studio">Android Studio</h2>
 <h2 id="更新现有_Eclipse_IDE_支持_Android_开发"><span id="jump">更新现有 Eclipse IDE 支持 Android 开发</span></h2>
