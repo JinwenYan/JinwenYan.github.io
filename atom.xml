@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-23T16:44:37.254Z</updated>
+  <updated>2014-09-23T16:51:19.250Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,11 +96,11 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-23T14:32:58.000Z</updated>
+    <updated>2014-09-23T16:51:13.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
-<p>Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的项目被称为<br>Android 开源项目（AOSP），主要由谷歌主导。   Android 系统支持后台进程，提供了丰富的用户界面库，使用了OpenGL-ES（Short<br>OpenGL）的标准，并允许访问文件系统，以及一个嵌入式 SQLite 数据库，并支持 2-D 和 3-D 图形。  </p>
+<p>Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的项目被称为 Android 开源项目（AOSP），主要由谷歌主导。<br>Android 系统支持后台进程，提供了丰富的用户界面库，使用了OpenGL-ES（Short OpenGL）的标准，并允许访问文件系统，以及一个嵌入式 SQLite 数据库，并支持 2-D 和 3-D 图形。  </p>
 <p>Android 应用程序通常包含不同的可视化和非可视化组件，并且可以重复使用其他应用程序的组件。</p>
 <h3 id="任务">任务</h3>
 <p>在 Android 中，重用其他应用程序组件的概念被称之<em>任务</em>。一个应用程序可以通过访问其他 Android 组件来完成一个<em>任务</em>。例如，在你应用程序的一个组件中，可以触发 Android 系统中另外一个组件来管理照片，即使这个组件不是你应用程序中的一部分，然后通过这个组件选择一张照片并返回选中的照片来使用。  </p>
