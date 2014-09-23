@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-23T16:57:10.014Z</updated>
+  <updated>2014-09-23T17:04:55.385Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-23T16:57:01.000Z</updated>
+    <updated>2014-09-23T17:04:51.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -129,7 +129,8 @@
 <p>Google 提供了两种集成开发环境（IDEs）来开发新的应用程序。  </p>
 <p><em>Android Developer Tools</em> (ADT) 是基于 Eclipse IDE 的。ADT 是一系列的组件（插件），用来扩展 Eclipse IDE 的 Android 开发能力的。  </p>
 <p>Google 同时也提供了另外一种 IDE 叫做 <em>Android Studio</em> 来创建 Android 应用程序。这个 IDE 是基于 <em>IntelliJ IDEA</em> 的。  </p>
-<p>这两种集成开发环境都包含了必须的功能来创建，编译，调试和部署 Android 应用程序。它们还允许开发人员创建和启动虚拟设备用来进行测试。<br>这两个工具都提供了专门的编辑器处理 Android 的特定文件。大部分 Android 的配置文件都是基于 XML 的。在这种情况下，这些编辑器允许您将文件的从 XML 表示形式和输入数据的结构化用户界面之间切换。  </p>
+<p>这两种集成开发环境都包含了必须的功能来创建，编译，调试和部署 Android 应用程序。它们还允许开发人员创建和启动虚拟设备用来进行测试。  </p>
+<p>这两个工具都提供了专门的编辑器处理 Android 的特定文件。大部分 Android 的配置文件都是基于 XML 的。在这种情况下，这些编辑器允许您将文件的从 XML 表示形式和输入数据的结构化用户界面之间切换。  </p>
 <h3 id="Dalvik_虚拟机">Dalvik 虚拟机</h3>
 <p>目前 Android 版本使用 Dalvik 虚拟机。最新的 Android 版本引入了一个新的运行时（ART）。</p>
 <h3 id="Android_运行时（ART）">Android 运行时（ART）</h3>
@@ -155,6 +156,7 @@
 <p>因此，这意味着在底层 Linux 内核的装置中，每一个 Android 应用程序与其他运行的应用程序都是隔离的。  </p>
 <p>如果数据应该被分享，应用程序必须显式地通过 Android 组件来处理这些要被分享的数据，例如，通过一个服务（<code>Service</code>）或者内容提供者（<code>Content Provider</code>）。</p>
 <h2 id="安装">安装</h2>
+<p>跳转到：<a href="http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/" target="_blank" rel="external">Android 开发工具安装</a></p>
 <h2 id="Android_设备模拟器和_Android_虚拟设备">Android 设备模拟器和 Android 虚拟设备</h2>
 <h2 id="练习：创建一个_Android_虚拟设备（AVD）">练习：创建一个 Android 虚拟设备（AVD）</h2>
 <h2 id="练习：在_Eclipse_中创建一个_Android_应用程序">练习：在 Eclipse 中创建一个 Android 应用程序</h2>
