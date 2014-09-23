@@ -9,7 +9,9 @@
     
     <meta name="author" content="KimYan">
     
-    <meta name="description" content="这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。">
+    <meta name="description" content="这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。
+什么是 Android ？
+Android 操作系统 Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的">
     
     
     
@@ -86,11 +88,89 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是_Android_？"><span class="toc-number">1.</span> <span class="toc-text">什么是 Android ？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_操作系统_Android_是一个基于_Linux_内核（Kernel）上的操作系统，负责开发_Android_系统的项目被称为"><span class="toc-number">1.1.</span> <span class="toc-text">Android 操作系统 Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的项目被称为</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#任务"><span class="toc-number">1.2.</span> <span class="toc-text">任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_平台组件"><span class="toc-number">1.3.</span> <span class="toc-text">Android 平台组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Google_Play"><span class="toc-number">1.4.</span> <span class="toc-text">Google Play</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_开发工具"><span class="toc-number">2.</span> <span class="toc-text">Android 开发工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_SDK"><span class="toc-number">2.1.</span> <span class="toc-text">Android SDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_调试桥（adb）"><span class="toc-number">2.2.</span> <span class="toc-text">Android 调试桥（adb）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_开发工具和_Android_Studio"><span class="toc-number">2.3.</span> <span class="toc-text">Android 开发工具和 Android Studio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dalvik_虚拟机"><span class="toc-number">2.4.</span> <span class="toc-text">Dalvik 虚拟机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_运行时（ART）"><span class="toc-number">2.5.</span> <span class="toc-text">Android 运行时（ART）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何开发_Android_应用程序"><span class="toc-number">2.6.</span> <span class="toc-text">如何开发 Android 应用程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从源代码到_Android_应用程序的转换过程"><span class="toc-number">2.7.</span> <span class="toc-text">从源代码到 Android 应用程序的转换过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安全和权限"><span class="toc-number">3.</span> <span class="toc-text">安全和权限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">4.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_设备模拟器和_Android_虚拟设备"><span class="toc-number">5.</span> <span class="toc-text">Android 设备模拟器和 Android 虚拟设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：创建一个_Android_虚拟设备（AVD）"><span class="toc-number">6.</span> <span class="toc-text">练习：创建一个 Android 虚拟设备（AVD）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：在_Eclipse_中创建一个_Android_应用程序"><span class="toc-number">7.</span> <span class="toc-text">练习：在 Eclipse 中创建一个 Android 应用程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：启动生成的_Android_应用程序"><span class="toc-number">8.</span> <span class="toc-text">练习：启动生成的 Android 应用程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决_Android_开发问题"><span class="toc-number">9.</span> <span class="toc-text">解决 Android 开发问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连接_Android_源代码"><span class="toc-number">10.</span> <span class="toc-text">连接 Android 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集成_ADT_到_Eclipse_中"><span class="toc-number">11.</span> <span class="toc-text">集成 ADT 到 Eclipse 中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DDMS_面板视图"><span class="toc-number">12.</span> <span class="toc-text">DDMS 面板视图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_应用程序的某些部分"><span class="toc-number">13.</span> <span class="toc-text">Android 应用程序的某些部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_应用程序组件概述"><span class="toc-number">14.</span> <span class="toc-text">Android 应用程序组件概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_基础用户界面组件"><span class="toc-number">15.</span> <span class="toc-text">Android 基础用户界面组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他重要的_Android_元素"><span class="toc-number">16.</span> <span class="toc-text">其他重要的 Android 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_manifest_文件"><span class="toc-number">17.</span> <span class="toc-text">Android manifest 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资源"><span class="toc-number">18.</span> <span class="toc-text">资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布局资源文件"><span class="toc-number">19.</span> <span class="toc-text">布局资源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视图"><span class="toc-number">20.</span> <span class="toc-text">视图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布局管理器和_ViewGroups_使用"><span class="toc-number">21.</span> <span class="toc-text">布局管理器和 ViewGroups 使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：使用布局和增加互动"><span class="toc-number">22.</span> <span class="toc-text">练习：使用布局和增加互动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：在程序运行时改变视图布局"><span class="toc-number">23.</span> <span class="toc-text">练习：在程序运行时改变视图布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：创建一个温度转换器"><span class="toc-number">24.</span> <span class="toc-text">练习：创建一个温度转换器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用资源"><span class="toc-number">25.</span> <span class="toc-text">使用资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assets_文件"><span class="toc-number">26.</span> <span class="toc-text">Assets 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在_XML_和代码中使用资源文件"><span class="toc-number">27.</span> <span class="toc-text">在 XML 和代码中使用资源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：使用_ScrollView_组件"><span class="toc-number">28.</span> <span class="toc-text">练习：使用 ScrollView 组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署"><span class="toc-number">29.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#_"><span class="toc-number">30.</span> <span class="toc-text"> </span></a></li></ol>
 		
 		</div>
 		
 		<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
+<h2 id="什么是_Android_？">什么是 Android ？</h2>
+<h3 id="Android_操作系统_Android_是一个基于_Linux_内核（Kernel）上的操作系统，负责开发_Android_系统的项目被称为">Android 操作系统 Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的项目被称为</h3>
+<p>Android 开源项目（AOSP），主要由谷歌主导。   Android 系统支持后台进程，提供了丰富的用户界面库，使用了OpenGL-ES（Short<br>OpenGL）的标准，并允许访问文件系统，以及一个嵌入式 SQLite 数据库，并支持 2-D 和 3-D 图形。  </p>
+<p>Android 应用程序通常包含不同的可视化和非可视化组件，并且可以重复使用其他应用程序的组件。</p>
+<h3 id="任务">任务</h3>
+<p>在 Android 中，重用其他应用程序组件的概念被称之<em>任务</em>。一个应用程序可以通过访问其他 Android 组件来完成一个<em>任务</em>。例如，在你应用程序的一个组件中，可以触发 Android 系统中另外一个组件来管理照片，即使这个组件不是你应用程序中的一部分，然后通过这个组件选择一张照片并返回选中的照片来使用。  </p>
+<p>下面的图片描述了这种工作流。</p>
+<p><a href="http://kimpic.qiniudn.com/android_task_flow.jpg" target="_blank" rel="external"></a></p>
+<h3 id="Android_平台组件">Android 平台组件</h3>
+<p>Android 系统是一个完整的软件栈，它通常分为四个区域，如下面所示。</p>
+<p><a href="http://kimpic.qiniudn.com/android_software_stack.png" target="_blank" rel="external"></a></p>
+<p>以上四个等级简单的描述：  </p>
+<p><strong>Applications（应用程序）</strong> —— Android 开源项目包含了几个默认的应用程序，如浏览器，相机，图库，音乐，电话等。  </p>
+<p><strong>Application framework（应用程序框架）</strong> —— 可以让 Android 系统和 Android 应用程序之间进行高层次互动的应用程序接口。  </p>
+<p><strong>Libraries and runtime（类库和运行时）</strong> —— 提供各种常用功能库（如：图形渲染，数据存储，网络浏览等）的应用程序框架和 Dalvik 运行时，以及核心 Java 库来运行 Android 应用程序。  </p>
+<p><strong>Linux Kernel（Linux 内核）</strong> —— 底部硬件的通信层。  </p>
+<p>Linux内核，库和运行时由应用程序框架封装。Android 应用开发者创建新的 Android 应用程序时，通常只接触到顶部两层。</p>
+<h3 id="Google_Play">Google Play</h3>
+<p>Google 提供的 Google Play 服务，开发者可以通过该平台提供自己的 Android 应用程序给 Android 用户使用。Google Play 服务允许用户购买和安装开发者提供的应用程序。  </p>
+<p>Google Play 也提供了一个更新服务。如果一个开发者为他的应用程序更新了一个新的版本到 Google Play 上，这个服务将会通知已经使用该应用程序的用户，提示他们有更新可用并允许安装更新。  </p>
+<p>Google Play 也为 Android 应用程序开发者提供了访问服务和各种类库的服务。比如，它提供了一个服务可以使用和显示谷歌地图，它提供了另外一个服务可以让不同的 Android 设备同步安装了相同应用程序的状态。Google Play 通过这些服务有利于部署老年人的 Android 版本，因为所有更新操作都可以由 Google 服务管理。</p>
+<h2 id="Android_开发工具">Android 开发工具</h2>
+<h3 id="Android_SDK">Android SDK</h3>
+<p>Android 软件开发工具包（Android Software Development Kit）中包含了必要的工具来创建，编译和打包 Android 应用程序。这些工具大部分都是基于命令行，Android 应用程序开发的主要方式是基于 Java 编程语言的。</p>
+<h3 id="Android_调试桥（adb）">Android 调试桥（adb）</h3>
+<p>Android SDK 提供的一个工具（<em>Android debug bridge</em>），它允许你连接一个虚拟或者真实的 Android 设备，其目的是用来管理设备或者调试你的应用程序。</p>
+<h3 id="Android_开发工具和_Android_Studio">Android 开发工具和 Android Studio</h3>
+<p>Google 提供了两种集成开发环境（IDEs）来开发新的应用程序。  </p>
+<p><em>Android Developer Tools</em> (ADT) 是基于 Eclipse IDE 的。ADT 是一系列的组件（插件），用来扩展 Eclipse IDE 的 Android 开发能力的。  </p>
+<p>Google 同时也提供了另外一种 IDE 叫做 <em>Android Studio</em> 来创建 Android 应用程序。这个 IDE 是基于 <em>IntelliJ IDEA</em> 的。  </p>
+<p>这两种集成开发环境都包含了必须的功能来创建，编译，调试和部署 Android 应用程序。它们还允许开发人员创建和启动虚拟设备用来进行测试。<br>这两个工具都提供了专门的编辑器处理 Android 的特定文件。大部分 Android 的配置文件都是基于 XML 的。在这种情况下，这些编辑器允许您将文件的从 XML 表示形式和输入数据的结构化用户界面之间切换。  </p>
+<h3 id="Dalvik_虚拟机">Dalvik 虚拟机</h3>
+<p>目前 Android 版本使用 Dalvik 虚拟机。最新的 Android 版本引入了一个新的运行时（ART）。</p>
+<h3 id="Android_运行时（ART）">Android 运行时（ART）</h3>
+<p>Android 4.4 上，Google 为 Android 4.4 推出了一个可选的 Android 运行时（ART），它是 Android 4.4 后作为默认的 Android 运行时。  </p>
+<p>ART 使用提前编译，一个 Android 设备的一个应用程序在部署的过程中，应用程序的代码被翻译成机器代码，这会导致产生超过30%的编译代码，但这样可以允许应用程序在开始运行的速度更快。  </p>
+<p>这也节省了电池的使用寿命，因为编译只进行一次，就在应用程序第一次启动的时候。  </p>
+<p>该 dex2oat 工具将会调用 Android 工具创建 .dex 文件，并编译成可执行和可链接格式（ELF）文件。此文件包含 DEX 的代码，编译为本地代码和元数据。允许保持 .dex 代码，使已经存在的工具持续有效。  </p>
+<p>ART 的垃圾回收器已经得到了优化，以减少其中应用程序的冻结时间。</p>
+<h3 id="如何开发_Android_应用程序">如何开发 Android 应用程序</h3>
+<p>Android 应用程序主要使用 Java 语言来编写。  </p>
+<p>在开发过程中，开发者要创建 Android 特定的配置文件和使用 Java 语言编写应用程序的逻辑。  </p>
+<p><em>ADT</em> 或者 <em>Android Studio</em> 工具会转换这些特定的 Android 文件，对使用者完全透明，构成一个 Android 应用程序。当开发者在他们的 <em>IDE</em> 中触发部署，整个 Android 应用程序会被编译，打包，部署和运行。</p>
+<h3 id="从源代码到_Android_应用程序的转换过程">从源代码到 Android 应用程序的转换过程</h3>
+<p>Java 源文件是被 Java 编译器转换成 Java 类文件（Java class files）的。  </p>
+<p><em>Android SDK</em> 中包含了一个工具，叫做 <em>DX</em> ，它把 Java 类文件转换成 <code>.dex</code> （Dalvik 可执行）文件。该应用程序的所有类文件都会放到这个 <code>.dex</code> 文件中。在这个转化过程中的类文件所产生的冗余信息将会在这个<code>.dex</code> 文件中得到优化。  </p>
+<p>比如，如果在不同的类文件中发现相同的字符串（<code>String</code>）,<code>.dex</code> 文件仅仅只包含一个这个字符串（<code>String</code>）的引用。  </p>
+<p>因此，<code>.dex</code> 文件比相应的类文件（<code>.class</code>）将要小得多。  </p>
+<p><code>.dex</code> 文件和 Android 项目的资源文件，例如，图片和 <em>XML</em> 文件，将会被打包为一个<code>.apk</code>（Android Package）文件。<br>程序 <code>aapt</code> (Android Asset Packaging Tool) 会执行这一步。  </p>
+<p>由此产生的 <em>apk</em> 文件包含了所有必要的数据来运行 Android 应用程序，并通过 <code>adb</code> 工具可以部署到Android设备上。</p>
+<h2 id="安全和权限">安全和权限</h2>
+<h2 id="安装">安装</h2>
+<h2 id="Android_设备模拟器和_Android_虚拟设备">Android 设备模拟器和 Android 虚拟设备</h2>
+<h2 id="练习：创建一个_Android_虚拟设备（AVD）">练习：创建一个 Android 虚拟设备（AVD）</h2>
+<h2 id="练习：在_Eclipse_中创建一个_Android_应用程序">练习：在 Eclipse 中创建一个 Android 应用程序</h2>
+<h2 id="练习：启动生成的_Android_应用程序">练习：启动生成的 Android 应用程序</h2>
+<h2 id="解决_Android_开发问题">解决 Android 开发问题</h2>
+<h2 id="连接_Android_源代码">连接 Android 源代码</h2>
+<h2 id="集成_ADT_到_Eclipse_中">集成 ADT 到 Eclipse 中</h2>
+<h2 id="DDMS_面板视图">DDMS 面板视图</h2>
+<h2 id="Android_应用程序的某些部分">Android 应用程序的某些部分</h2>
+<h2 id="Android_应用程序组件概述">Android 应用程序组件概述</h2>
+<h2 id="Android_基础用户界面组件">Android 基础用户界面组件</h2>
+<h2 id="其他重要的_Android_元素">其他重要的 Android 元素</h2>
+<h2 id="Android_manifest_文件">Android manifest 文件</h2>
+<h2 id="资源">资源</h2>
+<h2 id="布局资源文件">布局资源文件</h2>
+<h2 id="视图">视图</h2>
+<h2 id="布局管理器和_ViewGroups_使用">布局管理器和 ViewGroups 使用</h2>
+<h2 id="练习：使用布局和增加互动">练习：使用布局和增加互动</h2>
+<h2 id="练习：在程序运行时改变视图布局">练习：在程序运行时改变视图布局</h2>
+<h2 id="练习：创建一个温度转换器">练习：创建一个温度转换器</h2>
+<h2 id="使用资源">使用资源</h2>
+<h2 id="Assets_文件">Assets 文件</h2>
+<h2 id="在_XML_和代码中使用资源文件">在 XML 和代码中使用资源文件</h2>
+<h2 id="练习：使用_ScrollView_组件">练习：使用 ScrollView 组件</h2>
+<h2 id="部署">部署</h2>
+<h2 id="_"> </h2>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -152,7 +232,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是_Android_？"><span class="toc-number">1.</span> <span class="toc-text">什么是 Android ？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_操作系统_Android_是一个基于_Linux_内核（Kernel）上的操作系统，负责开发_Android_系统的项目被称为"><span class="toc-number">1.1.</span> <span class="toc-text">Android 操作系统 Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开发 Android 系统的项目被称为</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#任务"><span class="toc-number">1.2.</span> <span class="toc-text">任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_平台组件"><span class="toc-number">1.3.</span> <span class="toc-text">Android 平台组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Google_Play"><span class="toc-number">1.4.</span> <span class="toc-text">Google Play</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_开发工具"><span class="toc-number">2.</span> <span class="toc-text">Android 开发工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_SDK"><span class="toc-number">2.1.</span> <span class="toc-text">Android SDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_调试桥（adb）"><span class="toc-number">2.2.</span> <span class="toc-text">Android 调试桥（adb）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_开发工具和_Android_Studio"><span class="toc-number">2.3.</span> <span class="toc-text">Android 开发工具和 Android Studio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dalvik_虚拟机"><span class="toc-number">2.4.</span> <span class="toc-text">Dalvik 虚拟机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Android_运行时（ART）"><span class="toc-number">2.5.</span> <span class="toc-text">Android 运行时（ART）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何开发_Android_应用程序"><span class="toc-number">2.6.</span> <span class="toc-text">如何开发 Android 应用程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从源代码到_Android_应用程序的转换过程"><span class="toc-number">2.7.</span> <span class="toc-text">从源代码到 Android 应用程序的转换过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安全和权限"><span class="toc-number">3.</span> <span class="toc-text">安全和权限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">4.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_设备模拟器和_Android_虚拟设备"><span class="toc-number">5.</span> <span class="toc-text">Android 设备模拟器和 Android 虚拟设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：创建一个_Android_虚拟设备（AVD）"><span class="toc-number">6.</span> <span class="toc-text">练习：创建一个 Android 虚拟设备（AVD）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：在_Eclipse_中创建一个_Android_应用程序"><span class="toc-number">7.</span> <span class="toc-text">练习：在 Eclipse 中创建一个 Android 应用程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：启动生成的_Android_应用程序"><span class="toc-number">8.</span> <span class="toc-text">练习：启动生成的 Android 应用程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决_Android_开发问题"><span class="toc-number">9.</span> <span class="toc-text">解决 Android 开发问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连接_Android_源代码"><span class="toc-number">10.</span> <span class="toc-text">连接 Android 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集成_ADT_到_Eclipse_中"><span class="toc-number">11.</span> <span class="toc-text">集成 ADT 到 Eclipse 中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DDMS_面板视图"><span class="toc-number">12.</span> <span class="toc-text">DDMS 面板视图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_应用程序的某些部分"><span class="toc-number">13.</span> <span class="toc-text">Android 应用程序的某些部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_应用程序组件概述"><span class="toc-number">14.</span> <span class="toc-text">Android 应用程序组件概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_基础用户界面组件"><span class="toc-number">15.</span> <span class="toc-text">Android 基础用户界面组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他重要的_Android_元素"><span class="toc-number">16.</span> <span class="toc-text">其他重要的 Android 元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android_manifest_文件"><span class="toc-number">17.</span> <span class="toc-text">Android manifest 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资源"><span class="toc-number">18.</span> <span class="toc-text">资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布局资源文件"><span class="toc-number">19.</span> <span class="toc-text">布局资源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视图"><span class="toc-number">20.</span> <span class="toc-text">视图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布局管理器和_ViewGroups_使用"><span class="toc-number">21.</span> <span class="toc-text">布局管理器和 ViewGroups 使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：使用布局和增加互动"><span class="toc-number">22.</span> <span class="toc-text">练习：使用布局和增加互动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：在程序运行时改变视图布局"><span class="toc-number">23.</span> <span class="toc-text">练习：在程序运行时改变视图布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：创建一个温度转换器"><span class="toc-number">24.</span> <span class="toc-text">练习：创建一个温度转换器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用资源"><span class="toc-number">25.</span> <span class="toc-text">使用资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Assets_文件"><span class="toc-number">26.</span> <span class="toc-text">Assets 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在_XML_和代码中使用资源文件"><span class="toc-number">27.</span> <span class="toc-text">在 XML 和代码中使用资源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习：使用_ScrollView_组件"><span class="toc-number">28.</span> <span class="toc-text">练习：使用 ScrollView 组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署"><span class="toc-number">29.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#_"><span class="toc-number">30.</span> <span class="toc-text"> </span></a></li></ol>
  
   </div>
 
