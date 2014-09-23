@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-23T05:02:36.583Z</updated>
+  <updated>2014-09-23T05:12:38.477Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -19,17 +19,20 @@
     <link href="http://www.yanjinwen.com/2014/09/13/Android%20%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"/>
     <id>http://www.yanjinwen.com/2014/09/13/Android 开发入门总结/</id>
     <published>2014-09-13T01:32:27.000Z</published>
-    <updated>2014-09-23T05:02:31.000Z</updated>
+    <updated>2014-09-23T05:12:32.000Z</updated>
     <content type="html"><![CDATA[<p>学习如何创建 Android 应用程序。</p>
 <h2 id="Android_开发工具安装">Android 开发工具安装</h2>
 <p>这部分描述怎样安装和配置 Android 开发工具。  </p>
-<p><a href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/" target="_blank" rel="external">查看</a></p>
+<p><a href="http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/" target="_blank" rel="external">查看</a></p>
 <h2 id="Android_开发概览">Android 开发概览</h2>
-<p>这部分描述创建一个完整的 Android 应用程序的流程和概念。</p>
+<p>这部分描述创建一个完整的 Android 应用程序的流程和概念。  </p>
+<p><a href="http://www.yanjinwen.com/2014/09/12/Android 开发概览/" target="_blank" rel="external">查看</a></p>
 <h2 id="一些公共的_Android_开发问题的解决方案">一些公共的 Android 开发问题的解决方案</h2>
-<p>这部分列出一些 Android 开发中常见的一些问题和解决方案。</p>
+<p>这部分列出一些 Android 开发中常见的一些问题和解决方案。  </p>
+<p><a href="http://www.yanjinwen.com/2014/09/12/一些公共的 Android 开发问题的解决方案/" target="_blank" rel="external">查看</a></p>
 <h2 id="调试_Android_应用程序">调试 Android 应用程序</h2>
-<p>这部分介绍如何调试 Android 应用程序。</p>
+<p>这部分介绍如何调试 Android 应用程序。  </p>
+<p><a href="http://www.yanjinwen.com/2014/09/12/调试 Android 应用程序/" target="_blank" rel="external">查看</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>学习如何创建 Android 应用程序。</p>
@@ -47,11 +50,74 @@
   </entry>
   
   <entry>
+    <title><![CDATA[调试 Android 应用程序]]></title>
+    <link href="http://www.yanjinwen.com/2014/09/12/%E8%B0%83%E8%AF%95%20Android%20%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://www.yanjinwen.com/2014/09/12/调试 Android 应用程序/</id>
+    <published>2014-09-12T13:32:27.000Z</published>
+    <updated>2014-09-23T05:10:47.000Z</updated>
+    <content type="html"><![CDATA[<p>这部分介绍如何调试 Android 应用程序。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这部分介绍如何调试 Android 应用程序。</p>
+]]>
+    </summary>
+    
+      <category term="总结" scheme="http://www.yanjinwen.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[一些公共的 Android 开发问题的解决方案]]></title>
+    <link href="http://www.yanjinwen.com/2014/09/12/%E4%B8%80%E4%BA%9B%E5%85%AC%E5%85%B1%E7%9A%84%20Android%20%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://www.yanjinwen.com/2014/09/12/一些公共的 Android 开发问题的解决方案/</id>
+    <published>2014-09-12T12:32:27.000Z</published>
+    <updated>2014-09-23T05:10:53.000Z</updated>
+    <content type="html"><![CDATA[<p>本文列出了在 Android 开发过程中常见的问题和可能的解决方案。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本文列出了在 Android 开发过程中常见的问题和可能的解决方案。</p>
+]]>
+    </summary>
+    
+      <category term="总结" scheme="http://www.yanjinwen.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android 开发概览]]></title>
+    <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
+    <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
+    <published>2014-09-12T11:32:27.000Z</published>
+    <updated>2014-09-23T05:10:54.000Z</updated>
+    <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
+]]>
+    </summary>
+    
+      <category term="总结" scheme="http://www.yanjinwen.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.yanjinwen.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Android 开发工具安装]]></title>
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/</id>
     <published>2014-09-12T10:32:27.000Z</published>
-    <updated>2014-09-23T04:52:18.000Z</updated>
+    <updated>2014-09-23T05:10:56.000Z</updated>
     <content type="html"><![CDATA[<p>安装和配置 Android 开发工具。</p>
 <h2 id="安装_Android_开发工具">安装 Android 开发工具</h2>
 <p>Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 IntelliJ 之一。<br>这篇文章两种工具都会介绍，但重点会基于 Eclipse 工具。</p>
