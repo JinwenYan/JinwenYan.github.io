@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-25T05:08:52.894Z</updated>
+  <updated>2014-09-25T06:24:24.474Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-25T05:08:46.000Z</updated>
+    <updated>2014-09-25T06:21:39.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -225,7 +225,32 @@
 <p>当 AVD 启动后，在你开发的过程中不需要停止 AVD。如果你测试修改产生了新的版本的应用程序，只需要简单地在 AVD 上重新部署就可以了。</p>
 </blockquote>
 <h2 id="练习：在_Eclipse_中创建一个_Android_应用程序">练习：在 Eclipse 中创建一个 Android 应用程序</h2>
+<h3 id="使用_Android_项目向导">使用 Android 项目向导</h3>
+<p>在 Eclipse 中 Android 工具集为创建 Android 应用程序提供了向导。在这个练习中将会利用项目创建向导来创建一个基于模板的 Android 应用程序。  </p>
+<blockquote>
+<p>这个练习的目的是为了演示开发的流程。创建的元素将会在后面解释。</p>
+</blockquote>
+<h3 id="创建一个_Android_项目">创建一个 Android 项目</h3>
+<p>在菜单中选择 <em>File → New → Other… → Android → Android Application Project</em>，在第一个向导页面中输入下面表格的填充数据。  </p>
+<p><strong>表格二、配置你的 Android 项目</strong><br>|| 属性 || 值 ||<br>|| 应用程序的名称（Application Name） || Test App ||<br>|| 项目名称（Project Name） || com.vogella.android.first ||<br>|| 包名（Package Name） || com.vogella.android.first ||<br>|| API（Mininum（最低）, Target（目标）, Compile with（编译）） || 最新的 ||  </p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_1.png" alt=""></p>
+<p>单击 <em>Next</em> 按钮，确保你勾上了 <em>Create custom launcher icon</em> 和 <em>Create activity checkboxes</em> 选项。</p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_2.png" alt=""></p>
+<p>在创建应用程序启动图标的向导页面中，你可以选择创建自己的应用程序的图标，如下图所示。</p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_3.png" alt=""></p>
+<p>单击 <em>Next</em> 按钮，选择 <em>Empty Activity</em> 模板，继续单击 <em>Next</em> 按钮。</p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_4.png" alt=""></p>
+<p>在对话框中为模板输入以下表格的数据。</p>
+<p><strong>表格三、模板的值</strong>  </p>
+<p>|| <strong>参数</strong> || <strong>值</strong> ||<br>|| Activity || MainActivity ||<br>|| Layout || activity_main ||  </p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_5.png" alt=""></p>
+<p>单击 <em>Finish</em> 按钮，向导可能会提示你安装支持库（Support Library），如果是这样，选择安装它。  </p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_6.png" alt=""></p>
 <h2 id="练习：启动生成的_Android_应用程序">练习：启动生成的 Android 应用程序</h2>
+<h3 id="启动_AVD">启动 AVD</h3>
+<p>如果到目前为止，你还没有创建并启动一个 Android 虚拟设备（AVD）。 你应该选择适合你的 Android 应用程序的最低 Android 版本的 API。  </p>
+<p>启动后，你将看到 AVD 的欢迎画面，如下图所示。  </p>
+<p><img src="http://blog-pics.qiniudn.com/avd_welcome.jpg" alt=""></p>
 <h2 id="解决_Android_开发问题">解决 Android 开发问题</h2>
 <h2 id="连接_Android_源代码">连接 Android 源代码</h2>
 <h2 id="集成_ADT_到_Eclipse_中">集成 ADT 到 Eclipse 中</h2>
