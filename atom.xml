@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-23T17:04:55.385Z</updated>
+  <updated>2014-09-25T03:53:09.696Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-23T17:04:51.000Z</updated>
+    <updated>2014-09-25T01:38:21.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -158,6 +158,45 @@
 <h2 id="安装">安装</h2>
 <p>跳转到：<a href="http://www.yanjinwen.com/2014/09/12/Android 开发工具安装/" target="_blank" rel="external">Android 开发工具安装</a></p>
 <h2 id="Android_设备模拟器和_Android_虚拟设备">Android 设备模拟器和 Android 虚拟设备</h2>
+<h3 id="Android_模拟器和_Android_虚拟设备">Android 模拟器和 Android 虚拟设备</h3>
+<p>Android SDK 中包含了一个 Android 设备仿真器。该模拟器可用于运行一个Android虚拟设备（AVD），它模拟一个真实的Android手机。如下面的屏幕截图。</p>
+<p>！<a href="http://blog-pics.qiniudn.com/android_avd.jpg" target="_blank" rel="external"></a></p>
+<p>AVDs 允许你在不同的 Android 版本上和没有真实硬件设备的情况下测试和配置你的应用程序。  </p>
+<p>在创建你 AVD 的过程中，你可以自定义虚拟设备的配置，这包括，分辨率，Android 的 API 版本和显示器的密度等。  </p>
+<p>你可以定义多种不同的设备和不同的配置，并可以并行运行它们。这可以使你一次测试不同配置的设备。</p>
+<h3 id="Android_模拟器设备的一些快捷键">Android 模拟器设备的一些快捷键</h3>
+<p>以下表格列出了一些在使用 AVD 的时候非常有用的快捷键。  </p>
+<p><strong>表格一、Android 模拟器设备的快捷键</strong>  </p>
+<p>|| <strong>快捷键</strong> || <strong>说明</strong> ||<br>|| <strong>Alt+Enter</strong> || 最大化模拟器 ||<br>|| <strong>Ctrl+F11</strong> || 改变模拟器设备显示屏的方向 ||<br>|| <strong>F8</strong> || 关闭或打开网络 ||  </p>
+<h3 id="谷歌的_Android_AVD">谷歌的 Android AVD</h3>
+<p>在创建一个 AVD 的时候，你可以选择是创建一个 Android 设备或 Google 设备（Google APIs）。  </p>
+<p>为 Android 创建一个 AVD 包含了 Android 开源项目的程序（AOSP）。对于谷歌的 API 创建一个 AVD 包含了谷歌其他特定的代码。  </p>
+<p>使用 Google APIs 创建的 AVD 允许你使用 <em>Google Play Service</em> 服务，比如，新的 Google 地图 API 和 新的位置服务。</p>
+<h3 id="速度优化">速度优化</h3>
+<p>在创建一个模拟器的时候，如果你想，你也可以启用 <em>Snapshot</em> 或者 <em>Use Host GPU</em>。  </p>
+<blockquote>
+<p>在创建模拟器的对话框面板上，允许你两个选项都启用的，但如果真这样做的话，会得到一个错误信息提示这两个选项不能同时选择。  </p>
+</blockquote>
+<p>如果你选择了 <em>Snapshot</em> 选项，当你第二次启动设备的时候会非常快，因为在关闭 AVD 的时候它已经把状态保存下了。  </p>
+<p>如果你选择了 <em>Use Host GPU</em> 选项，AVD 将会直接使用你主机上的图形绘制，这样也会大大提升虚拟设备的运行速度。</p>
+<p><img src="" alt=""></p>
+<h3 id="英特尔系统镜像">英特尔系统镜像</h3>
+<p>运行的 AVD 的镜像只可能基于 <em>ARM CPU</em> 或者 <em>Intel CPI</em> 架构的。  </p>
+<p>一个使用英特尔系统镜像的 Android 模拟器在 <em>Intel/AMD</em> 硬件上运行，比在 <em>ARM</em> 的基础系统镜像上更快。因为这样模拟器在你的计算机上就不用再将 <em>ARM CPU</em> 的函数翻译成 <em>Intel/AMD CPU</em>。  </p>
+<p>这个系统镜像可以通过 <em>Android SDK Manager</em> 安装，如下图勾选的选项。</p>
+<p><img src="" alt=""></p>
+<blockquote>
+<p>英特尔镜像（<em>Intel Image</em>）不是对所有 <em>Android API</em> 级别都是可用的。  </p>
+<p>在这里你还需要安装针对 <em>MS Window</em> 系统的额外驱动程序。  </p>
+</blockquote>
+<p>下载后你可以在 <em>android-sdk</em> 的 <em>extras/intel</em> 文件夹中找到驱动程序， 运行<code>.exe</code>文件即可安装驱动程序。  </p>
+<blockquote>
+<p>这个安装选项是针对在 Window 操作系统上加速 Intel 模拟器的，如果仅仅是通过 <em>Android SDK Manager</em> 下载了驱动程序是没有任何变化的。<br>下载好后你可以新建一个基于 <em>Intel</em> 的 AVD 了，这个 AVD 在启动的速度不会变快，但在启动后运行 Android 应用程序期间就快很多了。  </p>
+<p>下载之后你可能需要重启 Android 开发环境才能创建基于 <em>Intel</em> 的 AVD 。</p>
+<p>在 Linux 操作系统上需要更多复杂的步骤，关于详细的安装指南参见<a href=""></a>，里面也包含了在 Window 上安装的说明。</p>
+</blockquote>
+<h3 id="其他（第三方）模拟器">其他（第三方）模拟器</h3>
+<p>这里提供一个可替代 Android 默认的模拟器，<a href="">Genymotion emulator</a> 相对于默认的 Android 模拟器，无论在启动还是运行 Android 应用程序的过程中都更快。</p>
 <h2 id="练习：创建一个_Android_虚拟设备（AVD）">练习：创建一个 Android 虚拟设备（AVD）</h2>
 <h2 id="练习：在_Eclipse_中创建一个_Android_应用程序">练习：在 Eclipse 中创建一个 Android 应用程序</h2>
 <h2 id="练习：启动生成的_Android_应用程序">练习：启动生成的 Android 应用程序</h2>
