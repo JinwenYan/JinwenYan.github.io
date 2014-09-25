@@ -156,15 +156,14 @@ Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开�
 <h2 id="Android_设备模拟器和_Android_虚拟设备">Android 设备模拟器和 Android 虚拟设备</h2>
 <h3 id="Android_模拟器和_Android_虚拟设备">Android 模拟器和 Android 虚拟设备</h3>
 <p>Android SDK 中包含了一个 Android 设备仿真器。该模拟器可用于运行一个Android虚拟设备（AVD），它模拟一个真实的Android手机。如下面的屏幕截图。</p>
-<p>！<a href="http://blog-pics.qiniudn.com/android_avd.jpg" target="_blank" rel="external"></a></p>
+<p><img src="http://blog-pics.qiniudn.com/android_avd.jpg" alt=""></p>
 <p>AVDs 允许你在不同的 Android 版本上和没有真实硬件设备的情况下测试和配置你的应用程序。  </p>
 <p>在创建你 AVD 的过程中，你可以自定义虚拟设备的配置，这包括，分辨率，Android 的 API 版本和显示器的密度等。  </p>
 <p>你可以定义多种不同的设备和不同的配置，并可以并行运行它们。这可以使你一次测试不同配置的设备。</p>
 <h3 id="Android_模拟器设备的一些快捷键">Android 模拟器设备的一些快捷键</h3>
 <p>以下表格列出了一些在使用 AVD 的时候非常有用的快捷键。  </p>
 <p><strong>表格一、Android 模拟器设备的快捷键</strong>  </p>
- <table summary="Android device emulator shortcuts" border="1"><br>                        <colgroup><br>                           <col align="left" class="c1"><br>                           <col align="left" class="c2"><br>                        </colgroup><br>                        <thead><br>                           <tr><br>                              <th align="left"><br>                                 Shortcut<br><br>                              </th><br>                              <th align="left">Description</th><br>                           </tr><br>                        </thead><br>                        <tbody><br>                           <tr><br>                              <td align="left"><br>                                 <span class="keycap"><strong>Alt</strong></span>+<span class="keycap"><strong>Enter</strong></span><br><br>                              </td><br>                              <td align="left">Maximizes the emulator.</td><br>                           </tr><br>                           <tr><br>                              <td align="left"><br>                                 <span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>F11</strong></span><br><br>                              </td><br>                              <td align="left">Changes the orientation of the emulator from landscape to<br>                                 portrait<br>                                 and vice<br>                                 versa.<br><br>                              </td><br>                           </tr><br>                           <tr><br>                              <td align="left"><br>                                 <span class="keycap"><strong>F8</strong></span><br><br>                              </td><br>                              <td align="left">Turns the network on and off.</td><br>                           </tr><br>                        </tbody><br>                     </table>
-
+<p><img src="http://blog-pics.qiniudn.com/avd_shortcut.png" alt=""></p>
 <h3 id="谷歌的_Android_AVD">谷歌的 Android AVD</h3>
 <p>在创建一个 AVD 的时候，你可以选择是创建一个 Android 设备或 Google 设备（Google APIs）。  </p>
 <p>为 Android 创建一个 AVD 包含了 Android 开源项目的程序（AOSP）。对于谷歌的 API 创建一个 AVD 包含了谷歌其他特定的代码。  </p>
@@ -229,7 +228,8 @@ Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开�
 </blockquote>
 <h3 id="创建一个_Android_项目">创建一个 Android 项目</h3>
 <p>在菜单中选择 <em>File → New → Other… → Android → Android Application Project</em>，在第一个向导页面中输入下面表格的填充数据。  </p>
-<p><strong>表格二、配置你的 Android 项目</strong><br>|| 属性 || 值 ||<br>|| 应用程序的名称（Application Name） || Test App ||<br>|| 项目名称（Project Name） || com.vogella.android.first ||<br>|| 包名（Package Name） || com.vogella.android.first ||<br>|| API（Mininum（最低）, Target（目标）, Compile with（编译）） || 最新的 ||  </p>
+<p><strong>表格二、配置你的 Android 项目</strong>  </p>
+<p><img src="http://blog-pics.qiniudn.com/tb_app_create_entries.png" alt=""></p>
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_1.png" alt=""></p>
 <p>单击 <em>Next</em> 按钮，确保你勾上了 <em>Create custom launcher icon</em> 和 <em>Create activity checkboxes</em> 选项。</p>
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_2.png" alt=""></p>
@@ -239,7 +239,7 @@ Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开�
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_4.png" alt=""></p>
 <p>在对话框中为模板输入以下表格的数据。</p>
 <p><strong>表格三、模板的值</strong>  </p>
-<p>|| <strong>参数</strong> || <strong>值</strong> ||<br>|| Activity || MainActivity ||<br>|| Layout || activity_main ||  </p>
+<p><img src="http://blog-pics.qiniudn.com/android_activity_template.png" alt="">  </p>
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_5.png" alt=""></p>
 <p>单击 <em>Finish</em> 按钮，向导可能会提示你安装支持库（Support Library），如果是这样，选择安装它。  </p>
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_6.png" alt=""></p>
