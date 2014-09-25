@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-25T08:33:37.832Z</updated>
+  <updated>2014-09-25T08:40:49.489Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-25T08:33:33.000Z</updated>
+    <updated>2014-09-25T08:40:42.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -236,17 +236,17 @@
 <p><img src="http://blog-pics.qiniudn.com/tb_app_create_entries.png" alt=""></p>
 <p><img src="http://blog-pics.qiniudn.com/new_android_application_step_1.png" alt=""></p>
 <p>单击 <em>Next</em> 按钮，确保你勾上了 <em>Create custom launcher icon</em> 和 <em>Create activity checkboxes</em> 选项。</p>
-<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_2.png" alt=""></p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_2.png" alt=""></p>
 <p>在创建应用程序启动图标的向导页面中，你可以选择创建自己的应用程序的图标，如下图所示。</p>
-<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_3.png" alt=""></p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_3.png" alt=""></p>
 <p>单击 <em>Next</em> 按钮，选择 <em>Empty Activity</em> 模板，继续单击 <em>Next</em> 按钮。</p>
-<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_4.png" alt=""></p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_4.png" alt=""></p>
 <p>在对话框中为模板输入以下表格的数据。</p>
 <p><strong>表格三、模板的值</strong>  </p>
 <p><img src="http://blog-pics.qiniudn.com/android_activity_template.png" alt="">  </p>
-<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_5.png" alt=""></p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_5.png" alt=""></p>
 <p>单击 <em>Finish</em> 按钮，向导可能会提示你安装支持库（Support Library），如果是这样，选择安装它。  </p>
-<p><img src="http://blog-pics.qiniudn.com/new_android_application_step_6.png" alt=""></p>
+<p><img src="http://blog-pics.qiniudn.com/new_android_application_6.png" alt=""></p>
 <h2 id="练习：启动生成的_Android_应用程序">练习：启动生成的 Android 应用程序</h2>
 <h3 id="启动_AVD">启动 AVD</h3>
 <p>如果到目前为止，你还没有创建并启动一个 Android 虚拟设备（AVD）。 你应该选择适合你的 Android 应用程序的最低 Android 版本的 API。  </p>
@@ -264,6 +264,7 @@
 <h2 id="解决_Android_开发问题">解决 Android 开发问题</h2>
 <p>事情并不总是按它们应该工作的那样工作。这里提供了一份 Android 开发典型的问题和解决方案：<a href="http://www.yanjinwen.com/2014/09/12/一些公共的 Android 开发问题的解决方案/" target="_blank" rel="external">一些公共的 Android 开发问题的解决方案</a>)</p>
 <h2 id="连接_Android_源代码">连接 Android 源代码</h2>
+<h3 id="连接源代码到你的_Android_Jar_文件">连接源代码到你的 Android Jar 文件</h3>
 <h2 id="集成_ADT_到_Eclipse_中">集成 ADT 到 Eclipse 中</h2>
 <h2 id="DDMS_面板视图">DDMS 面板视图</h2>
 <h2 id="Android_应用程序的某些部分">Android 应用程序的某些部分</h2>
