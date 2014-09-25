@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-25T08:42:07.794Z</updated>
+  <updated>2014-09-25T08:57:28.390Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-25T08:42:01.000Z</updated>
+    <updated>2014-09-25T08:57:23.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -265,6 +265,12 @@
 <p>事情并不总是按它们应该工作的那样工作。这里提供了一份 Android 开发典型的问题和解决方案：<a href="http://www.yanjinwen.com/2014/09/12/一些公共的 Android 开发问题的解决方案/" target="_blank" rel="external">一些公共的 Android 开发问题的解决方案</a></p>
 <h2 id="连接_Android_源代码">连接 Android 源代码</h2>
 <h3 id="连接源代码到你的_Android_Jar_文件">连接源代码到你的 Android Jar 文件</h3>
+<p>现在你已经创建了一个 Android 应用程序，你可以通过它连接到 Android 源代码（Android Source Code）。  </p>
+<p>在你的 Android 项目里通过<code>android.jar</code>文件连接到源代码。在包视图中右击<code>android.jar</code>文件，选择 <em>Properties → Java Source Attachment</em>.  </p>
+<p>在打开的面板中选择 <em>External location</em> 然后单击 <em>External Folder…</em> 按钮。浏览 <em>android_sdk/sources/android-xx</em> 的路径然后单击 <em>OK</em> 按钮。  </p>
+<p><img src="http://blog-pics.qiniudn.com/android%20source%20code%20attachment.png" alt=""></p>
+<h3 id="验证">验证</h3>
+<p>验证你可以看到 Android 源代码。通过快捷键 <strong>Ctrl + Shift + T</strong> 打开一个输入面板，然后输入<code>View</code>类回车看看是否能看到源代码。</p>
 <h2 id="集成_ADT_到_Eclipse_中">集成 ADT 到 Eclipse 中</h2>
 <h2 id="DDMS_面板视图">DDMS 面板视图</h2>
 <h2 id="Android_应用程序的某些部分">Android 应用程序的某些部分</h2>
