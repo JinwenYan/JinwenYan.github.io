@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-26T12:06:11.381Z</updated>
+  <updated>2014-09-26T16:13:34.016Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-26T12:06:03.000Z</updated>
+    <updated>2014-09-26T16:13:10.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -381,9 +381,31 @@
 <h3 id="应用程序的安装位置">应用程序的安装位置</h3>
 <p><code>installLocation</code> 属性用来指定你的应用程序安装位置，指定 <code>auto</code> 或 <code>preferExternal</code> 属性值允许应用程序安装到设备的外部存储。  </p>
 <blockquote>
-<p>在现实中，这一选项很少被使用，一旦设备连接到计算机，并挂载为 USB 存储，安装在外部存储的应用程序会被停止。</p>
+<p>在现实中，这一选项很少被使用，一旦设备连接到计算机，并挂载为 USB 存储，安装在外部存储的应用程序会被停止。  </p>
 </blockquote>
+<h3 id="更多信息">更多信息</h3>
+<p>关于更多 Android 清单文件的信息可以参考：<a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html" target="_blank" rel="external">Android Manifest documentation</a></p>
 <h2 id="资源">资源</h2>
+<h3 id="资源文件">资源文件</h3>
+<p>资源，如图像和 XML 配置文件，保持与 Android 应用程序的源代码分开。  </p>
+<p>资源文件必须放置在 <code>/res</code> 目录中预定义的子文件夹。资源文件被存储到哪个子文件夹取决于文件的类型。  </p>
+<p>下表列出了所支持的资源和它们的标准文件夹前缀的概览。  </p>
+<p><img src="http://blog-pics.qiniudn.com/android%20resource%20file.png" alt="">  </p>
+<h3 id="资源例子">资源例子</h3>
+<p>下面的代码是在 /res/values 定义了一些字符串常量，字符串数组，颜色和尺寸的文件名为 values.xml 的一个例子。  </p>
+<figure class="highlight"><pre><div class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">resources</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">string</span> <span class="attribute">name</span>=<span class="value">"app_name"</span>&gt;</span>Test<span class="tag">&lt;/<span class="title">string</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">string</span> <span class="attribute">name</span>=<span class="value">"action_settings"</span>&gt;</span>Settings<span class="tag">&lt;/<span class="title">string</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">string</span> <span class="attribute">name</span>=<span class="value">"hello_world"</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="title">string</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">string-array</span> <span class="attribute">name</span>=<span class="value">"operationsystems"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="title">item</span>&gt;</span>Ubuntu<span class="tag">&lt;/<span class="title">item</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="title">item</span>&gt;</span>Android<span class="tag">&lt;/<span class="title">item</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="title">item</span>&gt;</span>Microsoft Windows<span class="tag">&lt;/<span class="title">item</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="title">string-array</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">color</span> <span class="attribute">name</span>=<span class="value">"red"</span>&gt;</span>#ffff0000<span class="tag">&lt;/<span class="title">color</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">dimen</span> <span class="attribute">name</span>=<span class="value">"mymargin"</span>&gt;</span>10dp<span class="tag">&lt;/<span class="title">dimen</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">resources</span>&gt;</span> </div></pre></figure>  
+
+<h3 id="资源预选">资源预选</h3>
+<p>您也可以附加额外的预选文件夹名称，以表明相关的资源应该用于特定的配置。例如，您可以指定布局文件仅适用于特定的屏幕尺寸。</p>
+<h3 id="资源_IDs_和_R-java">资源 IDs 和 R.java</h3>
+<p>每个资源都会得到Android 编译系统分配的一个 ID。在 Android 项目的 <em>gen</em> 目录中包含 <code>R.java</code>文件的引用，该文件包含这些生成的值。这些文献都是静态的整数值。  </p>
+<p>如果您添加了新的资源文件，相应的引用会自动在 <code>R.java</code> 文件中创建。在 <code>R.java</code> 中文件手动改变是不应该的，修改了也会被覆盖。  </p>
+<p>Android 系统提供了一些方法，通过这些 <em>IDs</em> 来访问相应的资源文件。  </p>
+<p>例如，在你的源代码中通过 ID 访问<code>R.string.yourString</code>的字符串。你会用到 <em>Context</em> 类中定义的 <code>getString(R.string.yourString)</code> 方法。</p>
+<h3 id="资源_IDs_的命名规范">资源 IDs 的命名规范</h3>
+<p>Android SDK 中使用驼峰表示法 命名 ID，例如，<code>buttonRefresh</code> 。这是很好的做法，应该遵循这一做法。</p>
+<h3 id="系统资源">系统资源</h3>
+<p>Android 也提供了资源。这些被称为系统资源。通过 Android 的命名空间来区分系统资源和本地资源。例如，android.R.string.cancel 定义了平台字符串的取消操作。</p>
 <h2 id="布局资源文件">布局资源文件</h2>
 <h2 id="视图">视图</h2>
 <h2 id="布局管理器和_ViewGroups_使用">布局管理器和 ViewGroups 使用</h2>
