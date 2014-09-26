@@ -105,12 +105,12 @@ Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 Int
 <p>只要在一个合理大小的计算机上便可以完成 Android 开发。现代计算机推荐：2.6 GHz CPU，最少 8 GB 内存，一个 SSD 会显著加快 Android 模拟器的运行。</p>
 <h3 id="使用_64-bit_Linux_系统的要求">使用 64-bit Linux 系统的要求</h3>
 <p>Android SDK 是 32-bit 的，因此在 64-bit 的 Linux 系统下必须要安装<code>ia32-libs</code>的运行库，对于 Ubuntu 系统可以运行以下命令安装：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Ubuntu 12.04</span></div><div class="line">apt-<span class="keyword">get</span> install ia32-libs</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.10</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5 lib32z1</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 14.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6:i386 libstdc++<span class="number">6</span>:i386 libfreetype6:i386 libglu1-mesa:i386 libcups2:i386 libglib2<span class="number">.0</span>-<span class="number">0</span>:i386 libpng12-<span class="number">0</span>:i386 libsm6:i386 libxrender1:i386 libfontconfig1:i386</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="preprocessor"># Ubuntu 12.04</span></div><div class="line">apt-<span class="keyword">get</span> install ia32-libs</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 13.10</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6-i386 lib32stdc++<span class="number">6</span> lib32gcc1 lib32ncurses5 lib32z1</div><div class="line"></div><div class="line"><span class="preprocessor"># Ubuntu 14.04</span></div><div class="line">sudo apt-<span class="keyword">get</span> install libc6:i386 libstdc++<span class="number">6</span>:i386 libfreetype6:i386 libglu1-mesa:i386 libcups2:i386 libglib2<span class="number">.0</span>-<span class="number">0</span>:i386 libpng12-<span class="number">0</span>:i386 libsm6:i386 libxrender1:i386 libfontconfig1:i386</div></pre></figure>
 
 <p>对于不同的 Linux 发行版请参考相应的技术文档。</p>
 <h3 id="Linux_和_OpenGL_-_未能加载_libGL-so">Linux 和 OpenGL - 未能加载 libGL.so</h3>
 <p>在 Ubuntu 13.04 系统上也必须手动安装 OpenGL 支持，执行以下命令：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># <span class="operator"><span class="keyword">install</span> OpenGL support</span></div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> libgl1-mesa-dev</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"># <span class="operator"><span class="keyword">install</span> OpenGL support</span></div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> libgl1-mesa-dev</div></pre></figure>
 
 <h2 id="安装_Android_开发人员工具">安装 Android 开发人员工具</h2>
 <h3 id="下载_Android_开发工具包">下载 Android 开发工具包</h3>
@@ -158,7 +158,7 @@ Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 Int
 <h2 id="更新现有_Eclipse_IDE_支持_Android_开发"><span id="jump">更新现有 Eclipse IDE 支持 Android 开发</span></h2>
 <h3 id="安装_ADT_插件和_Android_SDK">安装 ADT 插件和 Android SDK</h3>
 <p>以下的操作表示你已经存在了一个 Eclipse IDE，现在要做的是更新 Eclipse IDE 来支持 Android 应用程序的开发。选择 <em>Help</em> → <em>Install New Software…</em>，在打开的窗口输入以下 <em>URL</em> 安装所有 <em>Android Development Tools (ADT)</em> 的组件：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http<span class="variable">s:</span>//<span class="keyword">dl</span>-ssl.google.<span class="keyword">com</span>/android/eclipse/</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">http<span class="variable">s:</span>//<span class="keyword">dl</span>-ssl.google.<span class="keyword">com</span>/android/eclipse/</div></pre></figure>
 
 <p>当所有组件安装完毕，会提示安装 <em>Android SDK</em>，你可以通过下面的向导或手动安装。</p>
 <p><img src="http://kimpic.qiniudn.com/install_android_adt_plugin_1.png" alt=""></p>
@@ -166,7 +166,7 @@ Google 为 Android 开发提供了工具。可以选择基于 Eclipse 或者 Int
 <p><img src="http://kimpic.qiniudn.com/install_android_adt_plugin_3.png" alt=""></p>
 <h3 id="手动安装_Android_SDK">手动安装 Android SDK</h3>
 <p>在安装 ADT 插件完成以后会自动提示安装 Android SDK，另外也可以手动到 Android SDK 下载页面下载：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http:<span class="comment">//developer.android.com/sdk/index.html</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">http:<span class="comment">//developer.android.com/sdk/index.html</span></div></pre></figure>
 
 <p>下载包含一个 <code>zip</code> 文件，下载好后可以解压到你想放的路径，例如，在我的 Linux 系统下，我放在 <em>/home/kim/android-sdk</em> 目录下。记住，目录不要包含空格，不然在使用的过程中会出现一些莫名的错误。</p>
 <p>最后还要在 Eclipse IDE 中配置好本地的 <em>Android SDK</em> 路径。选择 <em>Window → Preferences</em>，打开的窗口选择 <em>Android</em>，然后选择你的 <em>Android SDK</em> 路径即可。</p>
