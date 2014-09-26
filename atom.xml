@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-26T08:29:32.129Z</updated>
+  <updated>2014-09-26T12:06:11.381Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-26T08:29:27.000Z</updated>
+    <updated>2014-09-26T12:06:03.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -352,6 +352,37 @@
 <p>一个简单的 <em>AndroidManifest.xml</em> 文件样板。  </p>
 <figure class="highlight xml"><pre><div class="line"><span class="tag">&lt;<span class="title">manifest</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">package</span>=<span class="value">"com.example.android.rssfeed"</span></div><div class="line">    <span class="attribute">android:versionCode</span>=<span class="value">"1"</span></div><div class="line">    <span class="attribute">android:versionName</span>=<span class="value">"1.0"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">uses-sdk</span></span></div><div class="line">        <span class="attribute">android:minSdkVersion</span>=<span class="value">"16"</span></div><div class="line">        <span class="attribute">android:targetSdkVersion</span>=<span class="value">"19"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.INTERNET"</span> /&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">application</span></span></div><div class="line">        <span class="attribute">android:name</span>=<span class="value">"RssApplication"</span></div><div class="line">        <span class="attribute">android:allowBackup</span>=<span class="value">"false"</span></div><div class="line">        <span class="attribute">android:icon</span>=<span class="value">"@drawable/ic_launcher"</span></div><div class="line">        <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></div><div class="line">        <span class="attribute">android:theme</span>=<span class="value">"@style/AppTheme"</span> &gt;</div><div class="line">        <span class="tag">&lt;<span class="title">activity</span></span></div><div class="line">            <span class="attribute">android:name</span>=<span class="value">"RssfeedActivity"</span></div><div class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/title_activity_main"</span> &gt;</div><div class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.MAIN"</span> /&gt;</span></div><div class="line"></div><div class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> /&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="title">activity</span></span></div><div class="line">            <span class="attribute">android:name</span>=<span class="value">".DetailActivity"</span></div><div class="line">            <span class="attribute">android:label</span>=<span class="value">"Details"</span> &gt;</div><div class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="title">activity</span> <span class="attribute">android:name</span>=<span class="value">"MyPreferenceActivity"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="title">service</span> <span class="attribute">android:name</span>=<span class="value">"RssDownloadService"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="title">service</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="title">application</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">manifest</span>&gt;</span> </div></pre></figure>
 
+<h3 id="版本（Version）和包名(Package)">版本（Version）和包名(Package)</h3>
+<p><em>package</em> 属性在 <em>AndroidManifest.xml</em> 文件中用以定义应用程序需要引用的 Java 对象的基础包。如果 Java 对象所在的包不在 <em>package</em> 属性定义的基础包里，那么必须要以<strong>全限定名</strong>声明对该 Java 类的引用。  </p>
+<p>Google Play 要求每个 Android 应用程序必须使用自己独一无二的包名。因此，一个非常好的习惯就是使用你的反转域名来创建你应用程序的包名，以避免和其他应用程序产生冲突。  </p>
+<p><code>android:versionName</code> 和 <code>android:versionCode</code> 两个属性是用来指定你应用程序的版本的。其中 <code>android:versionName</code> 是提供给用户看的，可以为任意字符串。  </p>
+<p><code>android:versionCode</code> 必须为一个整数。Android 市场会根据这个 <em>versionCode</em> 来决定是否要为已经发布的应用程序执行更新。通常你应用程序的版本是从 1 开始，以后每发布一个新版本就 +1 。</p>
+<h3 id="应用程序（Application）和组件（Components）">应用程序（Application）和组件（Components）</h3>
+<p><code>&lt;application&gt;</code> 标签允许你为应用程序定义元数据和定义显式的应用程序类（可选）。它也是声明你应用程序组件的容器。  </p>
+<p><code>activity</code> 标签用来定义一个 <em>Activity</em> 组件。它的 <code>name</code> 属性指向要引用的类，其中的包名是相对于 <code>package</code> 属性定义的（如果不是全限定名）。  </p>
+<p><code>inten-filter</code> 用来告诉 Android 运行时当前这个 <em>Activity</em> 应该被定义为应用程序的入口点， 并使该应用程序在 Android 系统的启动器可用。如下面代码声明：  </p>
+<figure class="highlight"><pre><div class="line"><span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.MAIN"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></div></pre></figure>  
+
+<p><code>@string/app_name</code> 属性用来指定你应用程序的名称。通常这些应用程序资源（string, colors, icons）应该被定义在资源文件中，这样更容易适配不同的设备和资源国际化的操作。  </p>
+<p>同 <code>&lt;activity&gt;</code> 标签一样，其他 Android 组件（<code>service</code>, <code>receiver</code>, <code>provider</code>）也是类似声明。  </p>
+<h3 id="最低和目标版本">最低和目标版本</h3>
+<p><code>use-sdk</code> 标签允许你在 <em>AndroidManifest.xml</em> 文件中为你的应用程序声明在最低版本 <code>minSdkVersion</code> 和 目标版本 <code>targetSdkVersion</code>。  </p>
+<p><strong>表格四、最低和目标版本</strong>  </p>
+<p><img src="http://blog-pics.qiniudn.com/minSdk%20and%20targetSdk.png" alt="">  </p>
+<h3 id="权限-1">权限</h3>
+<p>你可以通过 <code>&lt;permission&gt;</code> 标签为应用程序声明一些权限，而声明你应用程序需要的权限则使用 <code>&lt;uses-permission&gt;</code> 标签。</p>
+<h3 id="所需的设备配置">所需的设备配置</h3>
+<p><code>user-configuration</code> 标签允许你为应用程序指定特定的输入方式。例如，下面代码指定设备需要硬件键盘输入。  </p>
+<figure class="highlight"><pre><div class="line"><span class="tag">&lt;<span class="title">uses-configuration</span> <span class="attribute">android:reqHardKeyboard</span>=<span class="value">"true"</span>/&gt;</span></div></pre></figure>  
+
+<p><code>user-feature</code> 标签允许你为应用程序指定设备需要的硬件配置。例如，下面代码指定设备需要具备照相机。  </p>
+<figure class="highlight"><pre><div class="line"><span class="tag">&lt;<span class="title">uses-feature</span> <span class="attribute">android:name</span>=<span class="value">"android.hardware.camera"</span> /&gt;</span></div></pre></figure>
+
+<h3 id="应用程序的安装位置">应用程序的安装位置</h3>
+<p><code>installLocation</code> 属性用来指定你的应用程序安装位置，指定 <code>auto</code> 或 <code>preferExternal</code> 属性值允许应用程序安装到设备的外部存储。  </p>
+<blockquote>
+<p>在现实中，这一选项很少被使用，一旦设备连接到计算机，并挂载为 USB 存储，安装在外部存储的应用程序会被停止。</p>
+</blockquote>
 <h2 id="资源">资源</h2>
 <h2 id="布局资源文件">布局资源文件</h2>
 <h2 id="视图">视图</h2>
@@ -364,7 +395,6 @@
 <h2 id="在_XML_和代码中使用资源文件">在 XML 和代码中使用资源文件</h2>
 <h2 id="练习：使用_ScrollView_组件">练习：使用 ScrollView 组件</h2>
 <h2 id="部署">部署</h2>
-<h2 id="_"> </h2>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
