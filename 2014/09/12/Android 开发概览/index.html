@@ -496,7 +496,7 @@ Android 是一个基于 Linux 内核（Kernel）上的操作系统，负责开�
 <h3 id="在代码中引用资源">在代码中引用资源</h3>
 <p><code>Resources</code> 类允许访问程序的独立资源。通过 <code>Context</code> 类的 <code>getResources()</code> 方法可以检索到 <code>Resources</code> 的实例。<code>Activity</code> 和 <code>Service</code> 是继承了 <code>Context</code> 类的。所以你可以通过这些基本的组件直接使用 <code>getResources()</code> 这个方法。  </p>
 <p><code>Resources</code> 类的实例还需要依靠其他 Android 框架类。例如，下面的代码显示了如何通过引用一个资源 ID 创建一个位图（<em>Bitmap</em>）文件。  </p>
-<figure class="highlight xml"><pre><div class="line">// BitmapFactory 需要引用一个 Resource 类的实例</div><div class="line">BitmapFactory.decodeResource(getResources(), R.drawable.ic_action_search); </div></pre></figure>  
+<figure class="highlight java"><pre><div class="line"><span class="comment">// BitmapFactory 需要引用一个 Resource 类的实例</span></div><div class="line">BitmapFactory.decodeResource(getResources(), R.drawable.ic_action_search); </div></pre></figure>  
 
 <h3 id="在一个_Activity_中访问布局的视图组件">在一个 Activity 中访问布局的视图组件</h3>
 <p>在 <code>Activity</code> 或者 <code>Fragment</code> 的代码中经常需要访问和修改视图组件的属性。  </p>

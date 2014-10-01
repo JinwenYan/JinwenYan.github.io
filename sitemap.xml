@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/2014/09/12/%E4%B8%80%E4%BA%9B%E5%85%AC%E5%85%B1%E7%9A%84%20Android%20%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2014-10-01T05:20:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/</loc>
-    <lastmod>2014-10-01T03:06:31.000Z</lastmod>
+    <lastmod>2014-10-01T03:07:39.000Z</lastmod>
   </url>
   
   <url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2014-09-23T05:10:56.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/2014/09/12/%E4%B8%80%E4%BA%9B%E5%85%AC%E5%85%B1%E7%9A%84%20Android%20%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2014-09-23T05:10:53.000Z</lastmod>
   </url>
   
   <url>
@@ -57,7 +57,7 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
+    <loc>http://www.yanjinwen.com/resume/README.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
@@ -67,7 +67,7 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/README.html</loc>
+    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
