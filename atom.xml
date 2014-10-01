@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-09-26T16:13:34.016Z</updated>
+  <updated>2014-10-01T03:03:43.827Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-09-26T16:13:10.000Z</updated>
+    <updated>2014-10-01T03:02:37.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -407,16 +407,155 @@
 <h3 id="系统资源">系统资源</h3>
 <p>Android 也提供了资源。这些被称为系统资源。通过 Android 的命名空间来区分系统资源和本地资源。例如，android.R.string.cancel 定义了平台字符串的取消操作。</p>
 <h2 id="布局资源文件">布局资源文件</h2>
+<p>Android <em>activities</em> 的用户界面通过 <code>views</code>(<code>widgets</code>) 和 <code>fragments</code> 来定义。这些用户界面可以在 <em>/res/layout</em> 文件夹下通过 XML 配置文件或者在 Java 源文件中定义。你也可以混合使用这两种方法。  </p>
+<p>使用 XML 配置文件来定义布局是首选的方法。这样程序代码的逻辑和布局文件的定义得到分离，也可以灵活地为不同的设备定义不同的布局文件。</p>
+<h3 id="XML_布局文件">XML 布局文件</h3>
+<p>布局资源文件被称为布局（<em>layout</em>）。布局指定 <em>ViewGroups</em>，<em>Views</em>，它们之间的关系以及它们的属性通过 XML 形式表示。  </p>
+<p>下面的代码是一个简单的布局文件示例。  </p>
+<figure class="highlight xml"><pre><div class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">xmlns:tools</span>=<span class="value">"http://schemas.android.com/tools"</span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:paddingBottom</span>=<span class="value">"@dimen/activity_vertical_margin"</span></div><div class="line">    <span class="attribute">android:paddingLeft</span>=<span class="value">"@dimen/activity_horizontal_margin"</span></div><div class="line">    <span class="attribute">android:paddingRight</span>=<span class="value">"@dimen/activity_horizontal_margin"</span></div><div class="line">    <span class="attribute">android:paddingTop</span>=<span class="value">"@dimen/activity_vertical_margin"</span></div><div class="line">    <span class="attribute">tools:context</span>=<span class="value">".MainActivity"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">TextView</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/mytext"</span></div><div class="line">        <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"@string/hello_world"</span> /&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span> </div></pre></figure>  
+
+<p>一个布局分配给一个 <code>activity</code> 通过调用 <code>setContentView()</code> 方法，如下面的示例代码所示。  </p>
+<figure class="highlight java"><pre><div class="line"><span class="keyword">package</span> com.yanjinwen.android.first;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"><span class="keyword">import</span> android.app.Activity;</div><div class="line"><span class="keyword">import</span> android.view.Menu;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>{</div><div class="line"></div><div class="line">    <span class="annotation">@Override</span></div><div class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span>(Bundle savedInstanceState) {</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">    }</div><div class="line"></div><div class="line">} </div></pre></figure>  
+
+<h3 id="定义_IDs">定义 IDs</h3>
+<p>如果一个视图（<em>View</em>）需要被 <em>Java</em> 代码访问，那么需要通过 <code>android:id</code> 属性为视图定义一个唯一的 ID。将一个新的 ID 分配给一个视图使用 <code>android:id</code> 属性通过对应元素的布局文件。下面的例子通过 <code>android:id=&quot;@+id/button1&quot;</code> 参数给视图 <em>Button</em> 分配了一个 <code>button1</code> ID。  </p>
+<figure class="highlight java"><pre><div class="line">&lt;Button</div><div class="line">  android:id="@+id/button1"</div><div class="line">  android:layout_width="wrap_content"</div><div class="line">  android:layout_height="wrap_content"</div><div class="line">  android:text="Show Preferences" &gt;</div><div class="line">&lt;/Button&gt; </div></pre></figure>  
+
+<p>需要时，<code>R.java</code> 文件会为布局文件中对应的视图自动生成对应 <em>Java</em> 代码映射。</p>
+<h3 id="最佳实践：通过单独文件预定义_IDs">最佳实践：通过单独文件预定义 IDs</h3>
+<p>正如上一节所描述的 Android 允许你动态地在布局文件中定义用户界面组件的标识（IDs）。可以通过配置文件在一个集中的地方定义所有视图组件的 IDs。  </p>
+<p>你可以在 <em>/res/values</em> 文件夹下创建一个文件 <em>ids.xml</em> 来控制你的 IDs，如下面的代码示例：  </p>
+<figure class="highlight java"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line">&lt;resources&gt;</div><div class="line">    &lt;item name="button1" type="id"/&gt;</div><div class="line">&lt;/resources&gt;</div></pre></figure>   
+
+<p>在你的布局文件中调用已经定义好的 ID。</p>
+<figure class="highlight xml"><pre><div class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">xmlns:tools</span>=<span class="value">"http://schemas.android.com/tools"</span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">tools:context</span>=<span class="value">".MainActivity"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">Button</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@id/button1"</span></div><div class="line">        <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_centerHorizontal</span>=<span class="value">"true"</span></div><div class="line">        <span class="attribute">android:layout_centerVertical</span>=<span class="value">"true"</span></div><div class="line">        <span class="attribute">android:layout_marginRight</span>=<span class="value">"27dp"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"Button"</span> /&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span> </div></pre></figure>  
+
+<h3 id="布局的性能注意事项">布局的性能注意事项</h3>
+<p>计算布局和绘制视图是资源密集型的操作。你应该尽可能地使用最简单的布局实现良好的性能。例如，你应该避免定义过深的嵌套布局管理器，或者在使用一个简单的布局管理器足够的情况下避免使用复杂的布局管理器。</p>
 <h2 id="视图">视图</h2>
-<h2 id="布局管理器和_ViewGroups_使用">布局管理器和 ViewGroups 使用</h2>
-<h2 id="练习：使用布局和增加互动">练习：使用布局和增加互动</h2>
-<h2 id="练习：在程序运行时改变视图布局">练习：在程序运行时改变视图布局</h2>
-<h2 id="练习：创建一个温度转换器">练习：创建一个温度转换器</h2>
+<h3 id="View_类">View 类</h3>
+<p>一个视图（<em>View</em>）在 Android 中代表一个小部件，例如，一个按钮或一个布局管理器。  </p>
+<p>Android 中的所有视图都继承自 <code>android.view.View</code> 类。这个类相对有点大（超过 18000 行代码），它为子类提供了大量基础功能。  </p>
+<h3 id="标准视图">标准视图</h3>
+<p><em>Android SDK</em> 提供了一些标准的视图。例如，<code>Button</code>，<code>TextView</code>，<code>EditView</code>等。</p>
+<p>同时也提供了一些复杂的部件。例如，用来显示结构化数据的 <code>ListView</code> 或者 <code>GirdView</code>。  </p>
+<p>视图所有基类的主包的部分命名空间为 <code>android.view</code>，而 Android 平台默认的部件为 <code>android.widget</code>。</p>
+<h3 id="自定义视图">自定义视图</h3>
+<p>开发者可以通过继承 <code>android.view.View</code> 类来自定义的视图（Views）。</p>
+<h2 id="布局管理器和_ViewGroups">布局管理器和 ViewGroups</h2>
+<h3 id="什么是布局管理器？">什么是布局管理器？</h3>
+<p>布局管理器是 <code>ViewGroup</code> 的子类，主要职责用来为自身和它的的子类 <code>Views</code> 布局。Android 支持不同于默认的布局管理器。  </p>
+<h3 id="重要的布局管理器">重要的布局管理器</h3>
+<p>在 Android 4.0 中最相关的布局管理器是：<code>LinearLayout</code>, <code>FrameLayout</code>, <code>RelativeLayout</code> and <code>GridLayout</code>。  </p>
+<p><code>AbsoluteLayout</code> 已经被弃用，而 <code>TableLayout</code> 通过 <code>GridLayout</code> 可以更有效地被实现。  </p>
+<blockquote>
+<p><code>RelativeLayout</code> 是一个复杂的布局管理器，应该当如果这样一个复杂的布局是必需的才使用，因为它会执行一个资源密集型计算来布局它的子类。  </p>
+</blockquote>
+<h3 id="布局的属性">布局的属性</h3>
+<p>所有布局允许开发人员定义属性。子类定义的属性可能会被它们的父类进行评估。  </p>
+<p><strong>表格六、宽度和高度的定义</strong><br><img src="http://blog-pics.qiniudn.com/width%20and%20%20height.png" alt="">  </p>
+<p>部件可以定义固定的大小，使用 <code>dp</code> 单位定义，例如，<code>100dp</code>。<code>dp</code> 固定的大小根据不同设备的配置决定比例。  </p>
+<p>下面通过图片来演示布局的一些属性。  </p>
+<p><img src="http://blog-pics.qiniudn.com/wrap_content.jpg" alt="">  </p>
+<p><img src="http://blog-pics.qiniudn.com/match_parent.png" alt=""></p>
+<h3 id="LinearLayout">LinearLayout</h3>
+<p><code>LinearLayout</code> 根据属性 <code>android:orientation</code> 将所有子类排成一行或一列。<code>android:orientation</code> 这个属性的值只可能为 <code>horizontal</code> 和 <code>vertical</code>，默认值为 <code>horizontal</code>。  </p>
+<p>如果使用 <code>horizontal</code>，子元素布局如图下图所示。  </p>
+<p><img src="" alt="">  </p>
+<p>如果使用 <code>vertical</code>，子元素布局如图下图所示。  </p>
+<p><img src="" alt="">  </p>
+<p><code>LinearLayout</code> 可以嵌套来实现更复杂的布局。  </p>
+<p><code>LinearLayout</code> 通过 <code>android:layout_weight</code> 属性支持为个别子元素分配权重。这个值指定将多少额外的空间分配给指定的 <code>View</code>。例如，如果你有两个小部件，第一个设置 <code>android:layout_weight</code> 的值为 <strong>1</strong>，第二个为 <strong>2</strong>，那么，第一个部件将占据1/3的空间，第二个为2/3。你也可以设置 <code>android:layout_weight</code> 的值为 <strong>0</strong>，这样总是会占有一定的比例。  </p>
+<h3 id="FrameLayout">FrameLayout</h3>
+<p><code>FrameLayout</code> 布局管理器的子元素被绘制在彼此之上，这样可以创建漂亮出的视觉效果。  </p>
+<p>下面的屏幕截图显示了 Gmail 应用程序利用 <code>FrameLayout</code> 显示几个按钮在另一个布局之上。  </p>
+<p><img src="http://blog-pics.qiniudn.com/frame%20layout.jpg" alt=""></p>
+<h3 id="RelativeLayout">RelativeLayout</h3>
+<p><code>RelativeLayout</code> 布局允许部件相对于彼此的位置。这可以用于复杂的布局。  </p>
+<p><code>RelativeLayout</code> 的一个简单例子，如果你居中一个单一的组件，只需要设置这个部件的属性 <code>android:layout_centerInParent</code> 为 <code>true</code> 即可。  </p>
+<figure class="highlight xml"><pre><div class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:orientation</span>=<span class="value">"vertical"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">ProgressBar</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/progressBar1"</span></div><div class="line">        <span class="attribute">style</span>=<span class="value">"?android:attr/progressBarStyleLarge"</span></div><div class="line">        <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_centerInParent</span>=<span class="value">"true"</span></div><div class="line">         /&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span> </div></pre></figure>  
+
+<h3 id="GridLayout">GridLayout</h3>
+<p><code>GridLayout</code> 是在 Android 4.0 引进的。此布局视图允许您组织成一个网格。<code>GridLayout</code>分离它的绘制区域为:行（rows）, 列（columns）和单元格（cells）。  </p>
+<p>你可以为每个视图指定想要多少列。需要多少行和列就指定相应的数值，如果没有指定，<code>GridLayout</code> 会使用默认的值。  </p>
+<p>下面的布局文件定义了一个 <code>GridLayout</code> 布局。  </p>
+<figure class="highlight xml"><pre><div class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">GridLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">android:id</span>=<span class="value">"@+id/GridLayout1"</span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:columnCount</span>=<span class="value">"4"</span></div><div class="line">    <span class="attribute">android:useDefaultMargins</span>=<span class="value">"true"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">TextView</span></span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"0"</span></div><div class="line">        <span class="attribute">android:layout_columnSpan</span>=<span class="value">"3"</span></div><div class="line">        <span class="attribute">android:layout_gravity</span>=<span class="value">"center_horizontal"</span></div><div class="line">        <span class="attribute">android:layout_marginTop</span>=<span class="value">"40dp"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"0"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"用户登录"</span></div><div class="line">        <span class="attribute">android:textSize</span>=<span class="value">"32dip"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">TextView</span></span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"0"</span></div><div class="line">        <span class="attribute">android:layout_gravity</span>=<span class="value">"right"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"1"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"用户名: "</span> &gt;</div><div class="line">    <span class="tag">&lt;/<span class="title">TextView</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">EditText</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/input1"</span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"1"</span></div><div class="line">        <span class="attribute">android:layout_columnSpan</span>=<span class="value">"2"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"1"</span></div><div class="line">        <span class="attribute">android:ems</span>=<span class="value">"10"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">TextView</span></span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"0"</span></div><div class="line">        <span class="attribute">android:layout_gravity</span>=<span class="value">"right"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"2"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"密码: "</span> &gt;</div><div class="line">    <span class="tag">&lt;/<span class="title">TextView</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">EditText</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/input2"</span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"1"</span></div><div class="line">        <span class="attribute">android:layout_columnSpan</span>=<span class="value">"2"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"2"</span></div><div class="line">        <span class="attribute">android:ems</span>=<span class="value">"10"</span></div><div class="line">        <span class="attribute">android:inputType</span>=<span class="value">"textPassword"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">Button</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/button1"</span></div><div class="line">        <span class="attribute">android:layout_column</span>=<span class="value">"2"</span></div><div class="line">        <span class="attribute">android:layout_row</span>=<span class="value">"3"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"登录"</span> /&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">GridLayout</span>&gt;</span></div></pre></figure>  
+
+<p>以上创建的用户界面如下图所示。  </p>
+<p><img src="http://blog-pics.qiniudn.com/GridLayout.png" alt="">  </p>
+<h3 id="ScrollView">ScrollView</h3>
+<p><code>ScrollView</code> 类可以用来包含一个其内容超出整个屏幕的视图，在这种情况下 <code>ScrollView</code> 将显示滚动条来滚动上下文。  </p>
+<p>当然这个视图（<em>View</em>）也可以是包含了其他元素的布局。  </p>
+<p>下面的代码使用 <code>ScrollView</code> 定义了一个示例布局文件。  </p>
+<figure class="highlight xml"><pre><div class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">ScrollView</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:fillViewport</span>=<span class="value">"true"</span></div><div class="line">    <span class="attribute">android:orientation</span>=<span class="value">"vertical"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">TextView</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@+id/TextView01"</span></div><div class="line">        <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:paddingLeft</span>=<span class="value">"8dip"</span></div><div class="line">        <span class="attribute">android:paddingRight</span>=<span class="value">"8dip"</span></div><div class="line">        <span class="attribute">android:paddingTop</span>=<span class="value">"8dip"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"This is a header"</span></div><div class="line">        <span class="attribute">android:textAppearance</span>=<span class="value">"?android:attr/textAppearanceLarge"</span> &gt;</div><div class="line">    <span class="tag">&lt;/<span class="title">TextView</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">ScrollView</span>&gt;</span> </div></pre></figure>  
+
+<p><code>android:fillViewport = &quot;true&quot;</code> 属性确保 <code>Scrollview</code> 设置为全屏即使元素小于一个屏幕。</p>
+<!-- ## 练习：使用布局和增加互动
+
+## 练习：在程序运行时改变视图布局
+
+## 练习：创建一个温度转换器 -->
+
 <h2 id="使用资源">使用资源</h2>
+<h3 id="在代码中引用资源">在代码中引用资源</h3>
+<p><code>Resources</code> 类允许访问程序的独立资源。通过 <code>Context</code> 类的 <code>getResources()</code> 方法可以检索到 <code>Resources</code> 的实例。<code>Activity</code> 和 <code>Service</code> 是继承了 <code>Context</code> 类的。所以你可以通过这些基本的组件直接使用 <code>getResources()</code> 这个方法。  </p>
+<p><code>Resources</code> 类的实例还需要依靠其他 Android 框架类。例如，下面的代码显示了如何通过引用一个资源 ID 创建一个位图（<em>Bitmap</em>）文件。  </p>
+<figure class="highlight xml"><pre><div class="line">// BitmapFactory 需要引用一个 Resource 类的实例</div><div class="line">BitmapFactory.decodeResource(getResources(), R.drawable.ic_action_search); </div></pre></figure>  
+
+<h3 id="在一个_Activity_中访问布局的视图组件">在一个 Activity 中访问布局的视图组件</h3>
+<p>在 <code>Activity</code> 或者 <code>Fragment</code> 的代码中经常需要访问和修改视图组件的属性。  </p>
+<p>你可以通过 <code>findViewById(id)</code> 在当前的布局文件中查找一个视图（View）组件。<code>id</code> 为视图组件在布局文件中定义的 ID 属性，示例代码如下：  </p>
+<figure class="highlight java"><pre><div class="line"><span class="keyword">package</span> com.yanjinwen.android.first;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.app.Activity;</div><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"><span class="keyword">import</span> android.widget.TextView;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>{</div><div class="line"></div><div class="line">    <span class="annotation">@Override</span></div><div class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span>(Bundle savedInstanceState) {</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        TextView textView = (TextView) findViewById(R.id.mytext);</div><div class="line">        </div><div class="line">        <span class="comment">// TODO do something with the TextView</span></div><div class="line">    }</div><div class="line"></div><div class="line">}</div></pre></figure>  
+
+<p><code>findViewById(id)</code> 方法也可以在一个层级中查找一个视图（View），如下代码示例。  </p>
+<figure class="highlight"><pre><div class="line"><span class="comment">// 在 Activity 中查找一个布局文件</span></div><div class="line"><span class="constant">LinearLayout linearLayout</span> = (LinearLayout) findViewById(R.id.mylayout);</div><div class="line"></div><div class="line"><span class="comment">// 然后在这个布局文件中查找子视图组件</span></div><div class="line"><span class="constant">TextView textView</span> = (TextView) linearLayout.findViewById(R.id.mytext);</div><div class="line"></div><div class="line"><span class="comment">// 注意，你可以直接查找 R.id.mytext，上面的代码只是为了演示所说的层级查找的流程。</span></div></pre></figure>
+
+<h3 id="在_XML_文件中引用资源">在 XML 文件中引用资源</h3>
+<p>在你的 <em>XML</em> 文件中，例如，在你的布局文件中，可以通过 <strong>@</strong> 符号引用其他资源。  </p>
+<p>例如，如果你想引用定义在一个 <em>XML</em> 资源文件中颜色资源，你可以通过 <code>@color/your_id</code> 来引用。或者你在一个 <em>XML</em> 资源文件中定义了 <em>key</em> 为 <em>“titlepage”</em> 的字符串资源，你可以通过 <code>@string/titilepage</code> 访问该字符串资源。  </p>
+<h3 id="在_XML_文件中引用_Android_系统资源">在 XML 文件中引用 Android 系统资源</h3>
+<p>使用一个 Android 系统资源，要在引用中包含 <code>android</code> 这个命名空间，例如，<code>android.R.string.cancel</code>。</p>
 <h2 id="Assets_文件">Assets 文件</h2>
-<h2 id="在_XML_和代码中使用资源文件">在 XML 和代码中使用资源文件</h2>
-<h2 id="练习：使用_ScrollView_组件">练习：使用 ScrollView 组件</h2>
+<h3 id="什么是_Assets？">什么是 Assets？</h3>
+<p>在 <em>res</em> 目录存储的结构数据认定是 Android 平台的，而 <em>assets</em> 目录则可以用来存储任意类型的数据。  </p>
+<p>你可以根据路径访问存储在 <em>assets</em> 中的文件，<em>assets</em> 也允许你创建子目录。  </p>
+<blockquote>
+<p>你也可以在 <em>/res/raw</em> 目录中存储非结构化的数据，但使用 <em>assets</em> 目录来存储这些数据被认为是最佳实践。</p>
+</blockquote>
+<h3 id="访问_Assets">访问 Assets</h3>
+<p>通过 <code>AssetsManager</code> 类的实例来访问 <em>assets</em> 中的数据，它可以通过 <code>Context</code> 类的 <code>getAssets()</code> 得到。  </p>
+<p><code>AssetsManager</code> 类的 <code>open()</code> 方法将 <em>assets</em> 中的文件封装成 <code>InputStream</code> 流，如下代码示例。  </p>
+<figure class="highlight java"><pre><div class="line"><span class="comment">// 得到 AssetManager 实例</span></div><div class="line">AssetManager manager = getAssets();</div><div class="line"></div><div class="line"><span class="comment">// 从 assets 文件夹中读取 "logo.png" 位图（bitmap）</span></div><div class="line">InputStream open = <span class="keyword">null</span>;</div><div class="line"><span class="keyword">try</span> {</div><div class="line">  open = manager.open(<span class="string">"logo.png"</span>);</div><div class="line">  Bitmap bitmap = BitmapFactory.decodeStream(open);</div><div class="line">  <span class="comment">// 指定 bitmap 到布局中的一个 ImageView</span></div><div class="line">  ImageView view = (ImageView) findViewById(R.id.imageView1);</div><div class="line">  view.setImageBitmap(bitmap);</div><div class="line">  } <span class="keyword">catch</span> (IOException e) {</div><div class="line">    e.printStackTrace();</div><div class="line">  } <span class="keyword">finally</span> {</div><div class="line">    <span class="keyword">if</span> (open != <span class="keyword">null</span>) {</div><div class="line">      <span class="keyword">try</span> {</div><div class="line">        open.close();</div><div class="line">      } <span class="keyword">catch</span> (IOException e) {</div><div class="line">        e.printStackTrace();</div><div class="line">      }</div><div class="line">    }</div><div class="line">}</div></pre></figure>
+
+<!-- ## 练习：在 XML 和代码中使用资源文件
+
+## 练习：使用 ScrollView 组件 -->
+
 <h2 id="部署">部署</h2>
+<h3 id="概述">概述</h3>
+<p>一般要部署一个 Android 应用程序到你的 Android 设备都会存在一些限制。您可以使用 USB 接口，电子邮件发送应用程序给自己，或使用众多 Android 市场之一，以安装应用程序。以下主要突出描述最常见的。</p>
+<h3 id="通过_Eclipse_部署">通过 Eclipse 部署</h3>
+<p>首先要打开设备设置中的 <em>USB 调试</em>，选择 <em>设置 → 开发人员选项</em>，然后勾上 <em>USB 调试选项</em>。  </p>
+<p>你可能还需要为你的手机安装驱动程序，Linux 和 Mac OS 操作系统可以直接工作，而 Windows 操作系统通常要先安装驱动程序才能进行调试。  </p>
+<p>关于在 Windows 上安装驱动程序可以参考：<a href="http://developer.android.com/tools/device.html" target="_blank" rel="external">Google guide for device deployment</a>  </p>
+<blockquote>
+<p>你应用程序的最低版本需要适配你 Android 设备的版本。  </p>
+</blockquote>
+<p>如果有多个设备连接到您的计算机,您可以选择应该使用哪一个。如果只有一个设备连接,就会在该设备上自动部署应用程序。  </p>
+<p><img src="http://blog-pics.qiniudn.com/target%20devie%20manual.png" alt="">  </p>
+<p><img src="http://blog-pics.qiniudn.com/choose%20a%20running%20device.png" alt=""></p>
+<h3 id="导出你的应用程序">导出你的应用程序</h3>
+<p>Android 应用程序必须签名后才能安装到 Android 设备上。在 Eclipse 开发过程中会自动为应用程序附上一个调试用的密匙（<em>debug key</em>）。  </p>
+<p>如果你不想使用 Eclipse IDE 来安装你的应用程序，你可以选中你的 Android 项目，右击选中：<em>Android Tools → Export Signed Application Package</em>.  </p>
+<p>这个向导允许使用现有的密匙（<em>key</em>）或者创建一个新的。  </p>
+<p>请注意，在 Google Play 上，您需要使用相同的签名密钥更新您的应用程序。如果您丢失了钥匙，你将不能够再更新应你的用程序。  </p>
+<p>一定要备份好你的密匙（<em>key</em>）。 </p>
+<h3 id="通过外部资源安装应用程序">通过外部资源安装应用程序</h3>
+<p>Android 也可以直接安装一个已经打包成 <code>.apk</code> 文件的应用程序。例如，在邮件附件或网页上的 <code>.apk</code> 链接文件。  </p>
+<p>当要安装非 Android 市场上的应用程序时，需要在 Android 设备上设置允许安装。这个选项通常在你的设备的：<em>设置 → 安全</em> 中找到。  </p>
+<h3 id="Google_Play-1">Google Play</h3>
+<p>使用 Google Play 发布你的应用程序需要一个开发者账号，需要一次费用 $25。申请了账号后就可以上传应用程序和所需的图标了。详细可以参考：<a href="https://play.google.com/apps/publish/signup/" target="_blank" rel="external">Google Play Publishing</a>  </p>
+<p>上传应用程序的时候 Google Play 会扫描你的应用程序，但不需要审核过程。所有不包含恶意软件的应用程序，将会被发布。通常上传几分钟后,应用程序即可用。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
