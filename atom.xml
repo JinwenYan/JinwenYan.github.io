@@ -4,7 +4,7 @@
   <subtitle><![CDATA[如果今天是我生命的最后一天，我还会继续吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-10-01T03:03:43.827Z</updated>
+  <updated>2014-10-01T03:06:35.707Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -96,7 +96,7 @@
     <link href="http://www.yanjinwen.com/2014/09/12/Android%20%E5%BC%80%E5%8F%91%E6%A6%82%E8%A7%88/"/>
     <id>http://www.yanjinwen.com/2014/09/12/Android 开发概览/</id>
     <published>2014-09-12T11:32:27.000Z</published>
-    <updated>2014-10-01T03:02:37.000Z</updated>
+    <updated>2014-10-01T03:06:31.000Z</updated>
     <content type="html"><![CDATA[<p>这部分描述怎样创建 Android 应用程序，主要使用 Eclipse IDE 来开发，系统基于 Android 4.4(KitKat)。</p>
 <h2 id="什么是_Android_？">什么是 Android ？</h2>
 <h3 id="Android_操作系统">Android 操作系统</h3>
@@ -419,13 +419,13 @@
 
 <h3 id="定义_IDs">定义 IDs</h3>
 <p>如果一个视图（<em>View</em>）需要被 <em>Java</em> 代码访问，那么需要通过 <code>android:id</code> 属性为视图定义一个唯一的 ID。将一个新的 ID 分配给一个视图使用 <code>android:id</code> 属性通过对应元素的布局文件。下面的例子通过 <code>android:id=&quot;@+id/button1&quot;</code> 参数给视图 <em>Button</em> 分配了一个 <code>button1</code> ID。  </p>
-<figure class="highlight java"><pre><div class="line">&lt;Button</div><div class="line">  android:id="@+id/button1"</div><div class="line">  android:layout_width="wrap_content"</div><div class="line">  android:layout_height="wrap_content"</div><div class="line">  android:text="Show Preferences" &gt;</div><div class="line">&lt;/Button&gt; </div></pre></figure>  
+<figure class="highlight xml"><pre><div class="line"><span class="tag">&lt;<span class="title">Button</span></span></div><div class="line">  <span class="attribute">android:id</span>=<span class="value">"@+id/button1"</span></div><div class="line">  <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">  <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">  <span class="attribute">android:text</span>=<span class="value">"Show Preferences"</span> &gt;</div><div class="line"><span class="tag">&lt;/<span class="title">Button</span>&gt;</span> </div></pre></figure>  
 
 <p>需要时，<code>R.java</code> 文件会为布局文件中对应的视图自动生成对应 <em>Java</em> 代码映射。</p>
 <h3 id="最佳实践：通过单独文件预定义_IDs">最佳实践：通过单独文件预定义 IDs</h3>
 <p>正如上一节所描述的 Android 允许你动态地在布局文件中定义用户界面组件的标识（IDs）。可以通过配置文件在一个集中的地方定义所有视图组件的 IDs。  </p>
 <p>你可以在 <em>/res/values</em> 文件夹下创建一个文件 <em>ids.xml</em> 来控制你的 IDs，如下面的代码示例：  </p>
-<figure class="highlight java"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line">&lt;resources&gt;</div><div class="line">    &lt;item name="button1" type="id"/&gt;</div><div class="line">&lt;/resources&gt;</div></pre></figure>   
+<figure class="highlight xml"><pre><div class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">resources</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">name</span>=<span class="value">"button1"</span> <span class="attribute">type</span>=<span class="value">"id"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">resources</span>&gt;</span></div></pre></figure>   
 
 <p>在你的布局文件中调用已经定义好的 ID。</p>
 <figure class="highlight xml"><pre><div class="line"><span class="tag">&lt;<span class="title">RelativeLayout</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attribute">xmlns:tools</span>=<span class="value">"http://schemas.android.com/tools"</span></div><div class="line">    <span class="attribute">android:layout_width</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">android:layout_height</span>=<span class="value">"match_parent"</span></div><div class="line">    <span class="attribute">tools:context</span>=<span class="value">".MainActivity"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">Button</span></span></div><div class="line">        <span class="attribute">android:id</span>=<span class="value">"@id/button1"</span></div><div class="line">        <span class="attribute">android:layout_width</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_height</span>=<span class="value">"wrap_content"</span></div><div class="line">        <span class="attribute">android:layout_centerHorizontal</span>=<span class="value">"true"</span></div><div class="line">        <span class="attribute">android:layout_centerVertical</span>=<span class="value">"true"</span></div><div class="line">        <span class="attribute">android:layout_marginRight</span>=<span class="value">"27dp"</span></div><div class="line">        <span class="attribute">android:text</span>=<span class="value">"Button"</span> /&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">RelativeLayout</span>&gt;</span> </div></pre></figure>  
