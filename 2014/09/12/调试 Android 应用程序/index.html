@@ -9,7 +9,10 @@
     
     <meta name="author" content="KimYan">
     
-    <meta name="description" content="这部分介绍如何调试 Android 应用程序。">
+    <meta name="description" content="这部分介绍如何调试 Android 应用程序。
+调试 Android 应用程序
+AndroidManifest.xml 中的 debuggable 属性
+如果你开发 Android 应用程序可以通过 Eclipse 调试它们。要在一个真实的设备上开启调试，需要在你应用程序的 AndroidManif">
     
     
     
@@ -86,11 +89,22 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#调试_Android_应用程序"><span class="toc-number">1.</span> <span class="toc-text">调试 Android 应用程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AndroidManifest-xml_中的_debuggable_属性"><span class="toc-number">1.0.1.</span> <span class="toc-text">AndroidManifest.xml 中的 debuggable 属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在_Eclipse_运行时打开调试"><span class="toc-number">1.1.</span> <span class="toc-text">在 Eclipse 运行时打开调试</span></a></li></ol></li></ol>
 		
 		</div>
 		
 		<p>这部分介绍如何调试 Android 应用程序。</p>
+<h2 id="调试_Android_应用程序">调试 Android 应用程序</h2>
+<h4 id="AndroidManifest-xml_中的_debuggable_属性">AndroidManifest.xml 中的 debuggable 属性</h4>
+<p>如果你开发 Android 应用程序可以通过 Eclipse 调试它们。要在一个真实的设备上开启调试，需要在你应用程序的 <em>AndroidManifest.xml</em> 文件中声明 <code>android:debuggable=&quot;true&quot;</code> 标记。ADT 工具自动为 <code>BuildConfig</code> 类的常量 <code>DEBUG</code> 构建这个调试标记。这个类是由 ADT 自动更新的。</p>
+<h3 id="在_Eclipse_运行时打开调试">在 Eclipse 运行时打开调试</h3>
+<p>JVM 需要你启动一个 <em>Java</em> 程序在 <em>Debug</em> 模式中调试它。Android 允许你在应用程序运行时，通过 <em>DDMS</em> 视图的调试按钮打开调试，如下图所示。  </p>
+<p><img src="http://blog-pics.qiniudn.com/open%20debugger%20in%20ddms.png" alt="">  </p>
+<p>当在这个视图打开调试后，遇到断点（<em>Breakpoint</em>）后，Eclipse 允许你开始调试应用程序的进程。</p>
+<!-- ## Eclipse 调试
+Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclipse 调试教程](http://www.vogella.com/tutorials/EclipseDebugging/article.html)
+## 练习：调试
+ -->
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -122,10 +136,10 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/09/13/Android 开发入门总结/" title="Android 开发入门总结">
+ <a href="/2014/09/13/Android 初级开发汇总/" title="Android 初级开发汇总">
   <strong>上一篇：</strong><br/>
   <span>
-  Android 开发入门总结</span>
+  Android 初级开发汇总</span>
 </a>
 </div>
 
@@ -152,7 +166,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#调试_Android_应用程序"><span class="toc-number">1.</span> <span class="toc-text">调试 Android 应用程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AndroidManifest-xml_中的_debuggable_属性"><span class="toc-number">1.0.1.</span> <span class="toc-text">AndroidManifest.xml 中的 debuggable 属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在_Eclipse_运行时打开调试"><span class="toc-number">1.1.</span> <span class="toc-text">在 Eclipse 运行时打开调试</span></a></li></ol></li></ol>
  
   </div>
 
