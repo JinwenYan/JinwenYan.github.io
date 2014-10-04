@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生有涯，艺无尽，机遇瞬逝，践行误导，决断不易。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-10-04T15:03:07.846Z</updated>
+  <updated>2014-10-04T15:06:41.763Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -899,7 +899,7 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
     <link href="http://www.yanjinwen.com/2014/08/13/Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://www.yanjinwen.com/2014/08/13/Linux 常用命令/</id>
     <published>2014-08-13T01:42:27.000Z</published>
-    <updated>2014-10-04T15:03:02.000Z</updated>
+    <updated>2014-10-04T15:06:37.000Z</updated>
     <content type="html"><![CDATA[<h2 id="常用操作">常用操作</h2>
 <p><code>ctrl + c</code>     强制中断当前程序  </p>
 <p><code>clear</code>       清屏  </p>
@@ -914,7 +914,7 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 <p><code>ctrl + u</code>     清空当前命令行  </p>
 <p><code>tab</code> 键  命令补全功能  </p>
 <p><code>[root@localhost home]#</code> 命令提示符 [当前用户@主机名 当前目录]# </p>
-<h2 id="_回到自己的家目录">　回到自己的家目录</h2>
+<h2 id="回到自己的家目录">回到自己的家目录</h2>
 <figure class="highlight"><pre><div class="line"><span class="built_in">cd</span>/user</div></pre></figure>
 
 
@@ -925,7 +925,7 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 
 <figure class="highlight"><pre><div class="line"><span class="built_in">cd</span></div></pre></figure>
 
-<h2 id="字符界面下的负责和粘贴">字符界面下的负责和粘贴</h2>
+<h2 id="字符界面下的复制和粘贴">字符界面下的复制和粘贴</h2>
 <p>1、用鼠标划住就是复制  </p>
 <p>2、点右键就是粘贴 </p>
 <h2 id="根下目录规划">根下目录规划</h2>
@@ -1104,7 +1104,7 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 
 
 
-<p>IPADDR=192.168.100.3<br>NETMASK=255.255.255.0  </p>
+<p><code>IPADDR=192.168.100.3</code><br><code>NETMASK=255.255.255.0</code>  </p>
 <p>重启网络：  </p>
 <figure class="highlight"><pre><div class="line"><span class="class"><span class="keyword">service</span> <span class="title">network</span> restart</span></div></pre></figure>
 
@@ -1134,13 +1134,13 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 
 
 
-<p>SELINUX=disabled  </p>
+<p><code>SELINUX=disabled</code>  </p>
 <p>selinux 防火墙要彻底关闭，必须重启服务器</p>
 <h2 id="shell_技巧">shell 技巧</h2>
-<p>|  管道符  </p>
-<p>tab  补全  </p>
-<p>history  查看命令历史  </p>
-<p>!ser  调用历史中离你最近一次以 ser 开头的命令  </p>
+<p><code>|</code>  管道符  </p>
+<p><code>tab</code>  补全  </p>
+<p><code>history</code>  查看命令历史  </p>
+<p><code>!ser</code>  调用历史中离你最近一次以 ser 开头的命令  </p>
 <p>帮助方法:  </p>
 <p>1、ls —help  </p>
 <p>2、zip -h  </p>
