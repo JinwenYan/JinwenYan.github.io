@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生有涯，艺无尽，机遇瞬逝，践行误导，决断不易。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-10-04T14:53:55.598Z</updated>
+  <updated>2014-10-04T15:03:07.846Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -899,43 +899,50 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
     <link href="http://www.yanjinwen.com/2014/08/13/Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://www.yanjinwen.com/2014/08/13/Linux 常用命令/</id>
     <published>2014-08-13T01:42:27.000Z</published>
-    <updated>2014-10-04T14:51:42.000Z</updated>
+    <updated>2014-10-04T15:03:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="常用操作">常用操作</h2>
-<p>ctrl + c     强制中断当前程序  </p>
-<p>clear        清屏  </p>
-<p>ctrl + l     清屏  </p>
-<p>/            系统根目录  </p>
-<p>/root        root 的家目录  </p>
-<p>ls           查看当前目录下的所有文件  </p>
-<p>cd           切换目录  </p>
-<p>cd -         切换最近使用过的两次目录  </p>
-<p>pwd          查看当前路径  </p>
-<p>~            /root 等于 root 用户的家目录  </p>
-<p>ctrl + u     清空当前命令行  </p>
-<p>tab 键  命令补全功能  </p>
-<p>[root@localhost home]# 命令提示符 [当前用户@主机名 当前目录]# </p>
+<p><code>ctrl + c</code>     强制中断当前程序  </p>
+<p><code>clear</code>       清屏  </p>
+<p><code>ctrl + l</code>     清屏  </p>
+<p><code>/</code>         系统根目录  </p>
+<p><code>/root</code>        root 的家目录  </p>
+<p><code>ls</code>           查看当前目录下的所有文件  </p>
+<p><code>cd</code>           切换目录  </p>
+<p><code>cd -</code>         切换最近使用过的两次目录  </p>
+<p><code>pwd</code>          查看当前路径  </p>
+<p><code>~</code>            /root 等于 root 用户的家目录  </p>
+<p><code>ctrl + u</code>     清空当前命令行  </p>
+<p><code>tab</code> 键  命令补全功能  </p>
+<p><code>[root@localhost home]#</code> 命令提示符 [当前用户@主机名 当前目录]# </p>
 <h2 id="_回到自己的家目录">　回到自己的家目录</h2>
-<p>1、cd/user  </p>
-<p>2、cd ~  </p>
-<p>3、cd</p>
+<figure class="highlight"><pre><div class="line"><span class="built_in">cd</span>/user</div></pre></figure>
+
+
+
+<figure class="highlight"><pre><div class="line"><span class="built_in">cd</span> ~</div></pre></figure>
+
+
+
+<figure class="highlight"><pre><div class="line"><span class="built_in">cd</span></div></pre></figure>
+
 <h2 id="字符界面下的负责和粘贴">字符界面下的负责和粘贴</h2>
 <p>1、用鼠标划住就是复制  </p>
 <p>2、点右键就是粘贴 </p>
 <h2 id="根下目录规划">根下目录规划</h2>
-<p>/home           普通用户的家目录  </p>
-<p>/root root      用户的家目录  </p>
-<p>/dev            磁盘管理器，专门用来管理设备的  </p>
-<p>/media          测试目录，挂载光盘  </p>
-<p>/mnt            测试目录, 挂载 U 盘  </p>
-<p>/boot           linux 的内核文件和 init 进程启动文件  </p>
-<p>/etc            应用程序的配置文件  </p>
-<p>/usr            用户自定义安装的应用程序或源代码  </p>
-<p>/bin            所有用户可以执行的命令  </p>
-<p>/usr/bin        所有用户可以执行的命令  </p>
-<p>/sbin           超级用户 root 才能执行的命令  </p>
-<p>/usr/sbin       超级用户 root 才能执行的命令  </p>
-<p>/var            日志文件  </p>
-<p>/tmp            临时文件夹 </p>
+<p><code>/home</code>        普通用户的家目录  </p>
+<p><code>/root</code>         root用户的家目录  </p>
+<p><code>/dev</code>            磁盘管理器，专门用来管理设备的  </p>
+<p><code>/media</code>          测试目录，挂载光盘  </p>
+<p><code>/mnt</code>            测试目录, 挂载 U 盘  </p>
+<p><code>/boot</code>           linux 的内核文件和 init 进程启动文件  </p>
+<p><code>/etc</code>            应用程序的配置文件  </p>
+<p><code>/usr</code>            用户自定义安装的应用程序或源代码  </p>
+<p><code>/bin</code>            所有用户可以执行的命令  </p>
+<p><code>/usr/bin</code>        所有用户可以执行的命令  </p>
+<p><code>/sbin</code>           超级用户 root 才能执行的命令  </p>
+<p><code>/usr/sbin</code>       超级用户 root 才能执行的命令  </p>
+<p><code>/var</code>            日志文件  </p>
+<p><code>/tmp</code>            临时文件夹 </p>
 <h2 id="文件管理">文件管理</h2>
 <h3 id="新建文件">新建文件</h3>
 <figure class="highlight"><pre><div class="line"><span class="keyword">vi</span> file1.txt</div></pre></figure>
@@ -1033,10 +1040,10 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 <figure class="highlight"><pre><div class="line"><span class="title">useradd</span> user1</div></pre></figure>
 
 <h3 id="了解用户">了解用户</h3>
-<p>1、用户家目录<br>/home/user1  </p>
-<p>2、用户文件-/etc/passwd<br>user1:x:500:500::/home/user1:/bin/bash  </p>
-<p>3、组文件-/etc/group<br>user1:x:500:  </p>
-<p>4、密码文件-/etc/shadow<br>user1:!$1$DcTMJDzt$.Nis97MX1gT3epqTWuHUY/:16133:0:99999:7:::  </p>
+<p>1、用户家目录<br><code>/home/user1</code></p>
+<p>2、用户文件-/etc/passwd<br><code>user1:x:500:500::/home/user1:/bin/bash</code>  </p>
+<p>3、组文件-/etc/group<br><code>user1:x:500:</code>  </p>
+<p>4、密码文件-/etc/shadow<br><code>user1:!$1$DcTMJDzt$.Nis97MX1gT3epqTWuHUY/:16133:0:99999:7:::</code>  </p>
 <p>!!说明没有密码<br>!说明被禁用</p>
 <h3 id="删除用户">删除用户</h3>
 <figure class="highlight"><pre><div class="line"><span class="title">userdel</span> -r user1</div></pre></figure>
@@ -1150,11 +1157,9 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="常用操作">常用操作</h2>
-<p>ctrl + c     强制中断当前程序  </p>
-<p>clear        清屏  </p>
-<p>ctrl + l     清屏  </p>
-<p>/            系统根目录  </p>
-<p>/roo]]>
+<p><code>ctrl + c</code>     强制中断当前程序  </p>
+<p><code>clear</code>       清屏  </p>
+<p><code>ctrl + l</code>     清屏  </]]>
     </summary>
     
       <category term="Linux" scheme="http://www.yanjinwen.com/tags/Linux/"/>
