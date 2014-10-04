@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/about/index.html</loc>
+    <lastmod>2014-10-04T04:25:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/resume/index.html</loc>
+    <lastmod>2014-10-04T02:34:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/2014/09/13/Android%20%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2014-10-01T07:15:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/2014/09/12/%E8%B0%83%E8%AF%95%20Android%20%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2014-10-01T06:00:43.000Z</lastmod>
   </url>
@@ -37,16 +52,6 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/about/index.html</loc>
-    <lastmod>2014-09-10T14:05:39.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/resume/index.html</loc>
-    <lastmod>2014-09-10T08:59:21.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.yanjinwen.com/search/index.html</loc>
     <lastmod>2014-08-17T11:00:29.000Z</lastmod>
   </url>
@@ -57,17 +62,17 @@
   </url>
   
   <url>
-    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
-    <lastmod>2014-08-02T12:22:12.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.yanjinwen.com/resume/README.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
+    <lastmod>2014-08-02T12:22:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
