@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生有涯，艺无尽，机遇瞬逝，践行误导，决断不易。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-10-04T13:34:21.918Z</updated>
+  <updated>2014-10-04T13:55:57.504Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -895,11 +895,69 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
   </entry>
   
   <entry>
+    <title><![CDATA[Linux 系统安装]]></title>
+    <link href="http://www.yanjinwen.com/2014/08/13/Linux%20%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    <id>http://www.yanjinwen.com/2014/08/13/Linux 系统安装/</id>
+    <published>2014-08-13T01:32:27.000Z</published>
+    <updated>2014-10-04T13:45:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="安装步骤">安装步骤</h2>
+<p>1、VMWare 虚拟机  </p>
+<p>2、组装 Linux 服务器    </p>
+<p>3、安装  </p>
+<ul>
+<li>分区</li>
+<li>设置 ip</li>
+<li>时区</li>
+<li>语言</li>
+<li>软件包</li>
+<li>设置 root 密码  </li>
+</ul>
+<p>4、关闭 firewall 防火墙和 selinux 增强防火墙</p>
+<h2 id="进入系统后">进入系统后</h2>
+<p>1、图形到字符 Ctrl + Alt + Shift + (F1 | F2 | F3 | F4 | F5 | F6 | F7)  </p>
+<p>2、字符到图形 Alt + (F1 | F2 | F3 | F4 | F5 | F6 | F7)  </p>
+<h2 id="设置进入系统的模式（图形界面、字符界面）">设置进入系统的模式（图形界面、字符界面）</h2>
+<figure class="highlight"><pre><div class="line"><span class="keyword">vi</span> /etc/inittab</div></pre></figure>
+
+
+
+<p><code>id:5:initdefault</code>  //把 5 改成 3 就从字符界面启动</p>
+<h2 id="系统运行级别">系统运行级别</h2>
+<p>0 关机  </p>
+<p>3 字符界面  </p>
+<p>5 图形界面  </p>
+<p>6 重启</p>
+<h2 id="清空历史命令">清空历史命令</h2>
+<figure class="highlight"><pre><div class="line"><span class="keyword">history</span> -<span class="keyword">c</span></div></pre></figure>
+
+<h2 id="基本命令">基本命令</h2>
+<p><code>ls</code> 查看当前目录下文件  </p>
+<p><code>cd</code> 切换目录</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="安装步骤">安装步骤</h2>
+<p>1、VMWare 虚拟机  </p>
+<p>2、组装 Linux 服务器    </p>
+<p>3、安装  </p>
+<ul>
+<li>分区</li>
+<li>设置 ip</li>
+<li>时区</li>
+<li>语言</li]]>
+    </summary>
+    
+      <category term="Linux" scheme="http://www.yanjinwen.com/tags/Linux/"/>
+    
+      <category term="Linux" scheme="http://www.yanjinwen.com/categories/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[我的博客搭建环境：Git+GitHub+Markdown+Hexo]]></title>
-    <link href="http://www.yanjinwen.com/2014/09/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%9AGit+GitHub+Markdown+Hexo/"/>
-    <id>http://www.yanjinwen.com/2014/09/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/</id>
-    <published>2014-09-10T23:32:27.000Z</published>
-    <updated>2014-09-11T11:48:14.000Z</updated>
+    <link href="http://www.yanjinwen.com/2014/08/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%9AGit+GitHub+Markdown+Hexo/"/>
+    <id>http://www.yanjinwen.com/2014/08/11/我的博客搭建环境：Git+GitHub+Markdown+Hexo/</id>
+    <published>2014-08-10T23:32:27.000Z</published>
+    <updated>2014-10-04T13:46:18.000Z</updated>
     <content type="html"><![CDATA[<h2 id="Git"><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></h2>
 <p>目前世界上最先进的分布式版本控制系统。<br>不再担心写废，想到哪里，写到哪里。</p>
 <h3 id="参考文献">参考文献</h3>
@@ -946,48 +1004,6 @@ Android 应用程序调试类似于 Java 应用程序的调试。参考：[Eclip
       <category term="Hexo" scheme="http://www.yanjinwen.com/tags/Hexo/"/>
     
       <category term="博客" scheme="http://www.yanjinwen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Linux 系统安装]]></title>
-    <link href="http://www.yanjinwen.com/2014/08/13/Linux%20%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
-    <id>http://www.yanjinwen.com/2014/08/13/Linux 系统安装/</id>
-    <published>2014-08-13T01:32:27.000Z</published>
-    <updated>2014-10-04T13:32:42.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="安装步骤">安装步骤</h2>
-<p>1、VMWare 虚拟机  </p>
-<p>2、组装 Linux 服务器    </p>
-<p>3、安装<br>分区、设置 ip、时区、语言、软件包、设置 root 密码  </p>
-<p>4、关闭 firewall 防火墙和 selinux 增强防火墙</p>
-<h2 id="进入系统后">进入系统后</h2>
-<p>1、图形到字符 Ctrl + Alt + Shift + (F1 | F2 | F3 | F4 | F5 | F6 | F7)  </p>
-<p>2、字符到图形 Alt + (F1 | F2 | F3 | F4 | F5 | F6 | F7)  </p>
-<h2 id="设置进入系统的模式（图形界面、字符界面）">设置进入系统的模式（图形界面、字符界面）</h2>
-<pre><code><span class="keyword">vi</span> /etc/inittab  
-</code></pre><p><code>id:5:initdefault</code>  //把 5 改成 3 就从字符界面启动</p>
-<h2 id="系统运行级别">系统运行级别</h2>
-<p>0 关机  </p>
-<p>3 字符界面  </p>
-<p>5 图形界面  </p>
-<p>6 重启</p>
-<h2 id="清空历史命令">清空历史命令</h2>
-<pre><code><span class="keyword">history</span> -<span class="keyword">c</span>
-</code></pre><h2 id="基本命令">基本命令</h2>
-<p><code>ls</code> 查看当前目录下文件  </p>
-<p><code>cd</code> 切换目录</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="安装步骤">安装步骤</h2>
-<p>1、VMWare 虚拟机  </p>
-<p>2、组装 Linux 服务器    </p>
-<p>3、安装<br>分区、设置 ip、时区、语言、软件包、设置 root 密码  </p>
-<p>4、关闭 firewall 防火墙和]]>
-    </summary>
-    
-      <category term="Linux" scheme="http://www.yanjinwen.com/tags/Linux/"/>
-    
-      <category term="Linux" scheme="http://www.yanjinwen.com/categories/Linux/"/>
     
   </entry>
   
