@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/resume/index.html</loc>
+    <lastmod>2014-10-07T01:11:07.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/about/index.html</loc>
     <lastmod>2014-10-05T23:44:07.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://www.yanjinwen.com/2014/08/13/Linux%20%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2014-10-04T13:45:54.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/resume/index.html</loc>
-    <lastmod>2014-10-04T02:34:56.000Z</lastmod>
   </url>
   
   <url>
