@@ -4,7 +4,7 @@
   <subtitle><![CDATA[每天都要自问：“如果今天是我生命的最后一天，我还会做今天我打算做的事情吗？”]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yanjinwen.com/"/>
-  <updated>2014-10-07T01:15:59.320Z</updated>
+  <updated>2014-10-07T02:09:12.147Z</updated>
   <id>http://www.yanjinwen.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[Android 初级开发汇总]]></title>
-    <link href="http://www.yanjinwen.com/2014/09/13/Android%20%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.yanjinwen.com/2014/09/13/Android 开发入门总结/</id>
+    <link href="http://www.yanjinwen.com/2014/09/13/Android%20%E5%88%9D%E7%BA%A7%E5%BC%80%E5%8F%91%E6%B1%87%E6%80%BB/"/>
+    <id>http://www.yanjinwen.com/2014/09/13/Android 初级开发汇总/</id>
     <published>2014-09-13T01:32:27.000Z</published>
-    <updated>2014-10-01T07:15:54.000Z</updated>
+    <updated>2014-10-01T06:00:36.000Z</updated>
     <content type="html"><![CDATA[<p>学习如何创建 Android 应用程序。</p>
 <h2 id="Android_开发工具安装">Android 开发工具安装</h2>
 <p>这部分描述怎样安装和配置 Android 开发工具。  </p>
@@ -51,10 +51,10 @@
   
   <entry>
     <title><![CDATA[Android 初级开发汇总]]></title>
-    <link href="http://www.yanjinwen.com/2014/09/13/Android%20%E5%88%9D%E7%BA%A7%E5%BC%80%E5%8F%91%E6%B1%87%E6%80%BB/"/>
-    <id>http://www.yanjinwen.com/2014/09/13/Android 初级开发汇总/</id>
+    <link href="http://www.yanjinwen.com/2014/09/13/Android%20%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"/>
+    <id>http://www.yanjinwen.com/2014/09/13/Android 开发入门总结/</id>
     <published>2014-09-13T01:32:27.000Z</published>
-    <updated>2014-10-01T06:00:36.000Z</updated>
+    <updated>2014-10-01T07:15:54.000Z</updated>
     <content type="html"><![CDATA[<p>学习如何创建 Android 应用程序。</p>
 <h2 id="Android_开发工具安装">Android 开发工具安装</h2>
 <p>这部分描述怎样安装和配置 Android 开发工具。  </p>
