@@ -1,0 +1,454 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>（转载）Peter Norvig：十年学会编程 | KimYan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="KimYan">
+    
+    <meta name="description" content="作者 Peter Norvig 是计算机科学家，Google 的研究总监。在本文中，Peter Norvig会告诉你：为什么急功近利地学习软件开发技术是没效果滴？
+为啥都想速成？
+随便逛一下书店，你会看到《7天自学Java》等诸如此类的 N 天甚至 N 小时学习 Visual Basic、Windo">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="KimYan&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="KimYan&#39;s Blog" title="KimYan&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="KimYan&#39;s Blog">KimYan&#39;s Blog</a></h1>
+				<h2 class="blog-motto">每天都要自问：“如果今天是我生命的最后一天，我还会做今天我打算做的事情吗？”</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">博客</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/10/08/十年学会编程/" title="（转载）Peter Norvig：十年学会编程" itemprop="url">（转载）Peter Norvig：十年学会编程</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://www.yanjinwen.com/about" title="KimYan" target="_blank" itemprop="author">KimYan</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-08T08:36:25.000Z" itemprop="datePublished"> 发表于 2014-10-08</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为啥都想速成？"><span class="toc-number">1.</span> <span class="toc-text">为啥都想速成？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何用十年掌握编程"><span class="toc-number">2.</span> <span class="toc-text">如何用十年掌握编程</span></a></li></ol>
+		
+		</div>
+		
+		<p>作者 Peter Norvig 是计算机科学家，Google 的研究总监。<br>在本文中，Peter Norvig会告诉你：为什么急功近利地学习软件开发技术是没效果滴？</p>
+<h2 id="为啥都想速成？">为啥都想速成？</h2>
+<p>随便逛一下书店，你会看到《7天自学Java》等诸如此类的 N 天甚至 N 小时学习 Visual Basic、Windows、Internet 的书。我用亚马逊网站的搜索功能，出版年份选1992年以后，书名关键词是：“天”、“自学”、“教你”，查到248个结果，前78个是计算机类图书，第79个是《30天学孟加拉语》。我用“天”换成“小时”，结果更惊人，有多达253本书，前77本是计算机图书，第78是《24小时自学语法句式》。在前200名中，96%是计算机的书。  </p>
+<p>结论就是：要么人们急于学习电脑，要么计算机比其他东西学起来要异常简单。没有任何书是关于几天学习贝多芬或量子物理的，甚至连犬类装扮都没有。费雷森（Felleisen）等人在其著作《如何设计程序》中同意这个趋势，其中提到：“坏设计很简单，笨蛋才用21天学，尽管他们还是真傻。”  </p>
+<p>让我们看看《三日学会C++》这个书名意味着什么：  </p>
+<p>◇学习：<br>三天内你可能没有时间写出有意义的程序，或者从中积累经验。你不可能有时间去跟职业编程者一起去理解在 C++ 环境下的状况。简而言之，你没有充足的时间学很多。所以这本书只能说肤浅的知识。正如亚历山大·波普（Alexander Pope）所言：一知半解是很危险的。  </p>
+<p>◇C++：<br>三天内你可能学会 C++ 的句法（如果你已经了解其他的语言），但你还不会使用它。打个比方，假如你是个 Basic 程序员，你可能写出 Basic 风格的 C++ 程序，而无法理解 C++ 的真实好处。那要点是什么？艾伦·佩里斯(Alan Perlis)曾经说过：“一门不能影响你编程观点的语言不足学的。”有可能你学了一点点 C++（或者诸如 Javascript、Flex 之类），因为你需要和现成的工具接口以完成手头的任务。这种情况下，你不是在学习如何编程，只是在学习如何完成任务。  </p>
+<p>◇三日：<br>不幸地是，这远远不够，下一部分会详细讲。  </p>
+<h2 id="如何用十年掌握编程">如何用十年掌握编程</h2>
+<p>研究人员（Bloom (1985), Bryan &amp; Harter (1899), Hayes (1989), Simmon &amp; Chase (1973)）得出结论：想要在诸多领域达到职业水平需要十年，比如国际象棋，作曲，电报操作，绘画，弹钢琴，游泳，网球以及神经心理学和拓扑学的研究。关键是精心练习，只是一遍一遍地重复是不够的，必须挑战恰好超越你能限的事情，尝试并思考你的表现，并自我矫正。周而复始。这并无捷径！4岁的音乐奇才莫扎特用了13年才能创作世界级的音乐。另外，披头士乐队似乎在1964年的埃德·苏利文（ Ed Sullivan show）演出中一炮而红，但是他们自从1957年就在利物浦和汉堡的酒吧演出，在取得广泛关注后，第一部重量级作品《佩珀军士》（Sgt. Peppers）是在1967年发行。马尔科姆·格拉德威尔（Malcolm Gladwell）撰文描述了一项针对柏林音乐学院学生的研究，他们被分为尖子，中等和不足三类，并被问到他们练琴的情况：  </p>
+<blockquote>
+<p>所有三组中的人，开始学琴的年龄大概相差无几，五岁左右。在刚开始的几年，所有人练习量也差不多，一周两三个小时。自八岁开始，实质性变化就有了。那些精英学生开始比其他人练习更多：九岁的时候一周六个小时，十二岁的时候一周八个小时，十四岁的时候一周十六个小时，一直到二十岁的时候一周要超过三十小时。截止到二十岁，在他们的生涯里已经有总计一万小时练琴。仅仅表现可以的那部分学生加起来是八千小时，那些未来的音乐老师有四千小时。  </p>
+</blockquote>
+<p>所以，更确切地说，一万小时，而非十年，是个神奇之数。萨缪尔·约翰逊（Samuel Johnson, 1709-1784）认为还需更长时间：“卓越乃一生之追求，而非其它”。 乔叟（Chaucer, 1340-1400）抱怨道”the lyf so short, the craft so long to lerne.” （生之有限，学也无涯）。希波克拉底（Hippocrates, c. 400BC）因这句话被世人所知：”ars longa, vita brevis”（译注：拉丁语，意为“艺无尽，生有涯”），更长的版本是 “Ars longa, vita brevis, occasio praeceps, experimentum periculosum, iudicium difficile”，翻译成英文就是 “Life is short, (the) craft long, opportunity fleeting, experiment treacherous, judgment difficult.” （生有涯，艺无尽，机遇瞬逝，践行误导，决断不易）。  </p>
+<p>我的编程成功秘笈是：  </p>
+<p>◇首先要对编程感兴趣，能从编程中得到乐趣。一定要让它足够有趣，因为你要保持你的兴趣长达十年。  </p>
+<p>◇与别的程序员交流；阅读别人的代码——这比看任何书或参加培训课都重要。  </p>
+<p>◇实践。最好的学习乃实践。俗话说：“编程的至高境界一定要通过充分的实践才能达到，而个人的能力可通过不懈努力获得显著提升。” (p. 366) “最有效率的学习需要明确的目标，适当的难度，知识回馈，并容许重复或修正错误。” (p. 20-21) 《实践认知：每日的思维、数学及文化》（Cognition in Practice: Mind, Mathematics, and Culture in Everyday Life） 在这方面可做参考。  </p>
+<p>◇如果你愿意，花四年学习大学课程（或者再加上读研）。这将给你赢得某些工作机会，并给予你在该领域的深层见解。但如果你不喜欢学校的学习，你同样可以在工作中获得相似的经验。无论如何，单靠书本是远远不够的。“学习计算机科学不会让你成为编程专家，如同学习绘画和色彩理论不会让你成为画家一样”。这是埃里克·雷蒙德（Eric Raymond）说的，他是《新黑客字典》（The New Hacker’s Dictionary）的作者。我雇用过的最优秀程序员，只有高中文凭。但他开发过许多伟大软件，有自己的新闻组，通过公司认股赚的钱就让他买下了自己的夜店。  </p>
+<p>◇和其他程序员一起参与工程项目。在某些项目中担当最优秀程序员，在另一些项目中充当最差劲程序员。充当领头羊的时候，你要测试你领导一项工程的能力，并用你的视野来激发他人；如果在项目组中垫底，就应该学习其它牛人在做些啥，以及他们不喜欢做的（看他们把哪些活让给你做）。  </p>
+<p>◇继续别人的工程项目。去理解先前程序员写的程序。学习如何理解并解决先前程序员没有考虑到的问题。思考你的程序该如何设计以便让之后的程序员更容易维护。  </p>
+<p>◇至少学6种程序语言。其中包括一种支持类抽象的（Java和C++），一种支持函数抽象的（如Lisp或ML），一种支持语义抽象的（Lisp），一种支援声明规范的（如Prolog或C++模板），还有一种支援协程的（Icon或Scheme），另外一种支持并发的（Sisal）。  </p>
+<p>◇记住，在“计算机科学”里有“计算机”一词。理解计算机执行你的代码的时候花费的时间。比如：从内存中取一个字（考虑有无缓存未命中情形），连续从磁盘读字，或者在磁盘中定位。  </p>
+<p>◇参加语言标准化工作。这可能是有关 ANSI C++ 委员会，也可能是决定你编码风格是两格缩进或四格缩进。无论如何，你要知道其他人对语言的喜好程度，有时还要想想他们为什么喜欢这样。  </p>
+<p>◇知道自己应该在何时脱身于语言标准化。  </p>
+<p>所有上述这些，很难通过书本的学习来达到。我头一个孩子出生时，我读了所有的“如何做”（How To）系列的书籍，却依然对育婴毫无头绪。30个月后，我第二个孩子出生，我还需要温习一下那些书吗？绝对不！相反，我完全可以参照个人经验，而结果相当有效。这更让我确信：我的经验胜过那些专家们写的上千页文字。  </p>
+<p>弗雷德·布鲁克斯（Fred Brooks）在《没有银弹》（No Silver Bullet）一书给出了寻找顶级设计师的三条建议：<br>◇尽早系统地识别出顶级设计师。<br>◇分配一个人作为其职业规划的导师。<br>◇给予机遇让成长中的设计师互相磨砺。  </p>
+<p>此处假定有部分人已经有成为伟大设计师的潜质，你所需的就是要诱导他们。艾伦·佩里斯（Alan Perlis）一针见血地指出：”假如人人都可以学雕刻，那就得教米开朗基罗如何不去干雕刻。对于伟大程序员，也是如此。”  </p>
+<p>所以，简单地买一本Java书，你或许能找到些有用的东西，但绝不会让你在24小时内甚至24天抑或24月内，成为行家里手。  </p>
+<p><a href="http://norvig.com/21-days.html" target="_blank" rel="external">洋文原始出处：</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/编程/">编程</a>►<a class="article-category-link" href="/categories/编程/转载/">转载</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/编程/">编程</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.yanjinwen.com/2014/10/08/十年学会编程/" data-title="（转载）Peter Norvig：十年学会编程 | KimYan&#39;s Blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/09/13/Android 初级开发汇总/"  title="Android 初级开发汇总">
+ <strong>下一篇：</strong><br/> 
+ <span>Android 初级开发汇总
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为啥都想速成？"><span class="toc-number">1.</span> <span class="toc-text">为啥都想速成？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何用十年掌握编程"><span class="toc-number">2.</span> <span class="toc-text">如何用十年掌握编程</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Android/" title="Android">Android<sup>6</sup></a></li>
+		
+			<li><a href="/categories/English/" title="English">English<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/categories/博客/" title="博客">博客<sup>1</sup></a></li>
+		
+			<li><a href="/categories/编程/" title="编程">编程<sup>1</sup></a></li>
+		
+			<li><a href="/categories/编程/转载/" title="转载">转载<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/总结/" title="总结">总结<sup>7</sup></a></li>
+		
+			<li><a href="/tags/Android/" title="Android">Android<sup>6</sup></a></li>
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Rosetta-Stone/" title="Rosetta Stone">Rosetta Stone<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/软件/" title="软件">软件<sup>1</sup></a></li>
+		
+			<li><a href="/tags/GitHub/" title="GitHub">GitHub<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Git/" title="Git">Git<sup>1</sup></a></li>
+		
+			<li><a href="/tags/学习/" title="学习">学习<sup>1</sup></a></li>
+		
+			<li><a href="/tags/资源/" title="资源">资源<sup>1</sup></a></li>
+		
+			<li><a href="/tags/编程/" title="编程">编程<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <p class="asidetitle">听歌</p>
+<br />
+<embed src="http://www.xiami.com/widget/41054614_34615989_231_346_BD3E0F_dddddd_0/collectPlayer.swf" type="application/x-shockwave-flash" width="230" height="346" wmode="opaque"></embed>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hey guy, I&#39;m KimYan, I&#39;m a self-taught programmer. <br/>
+			This blog tells my tales of how I approach programming and hacking.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1038923793" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		<a href="https://github.com/JinwenYan" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/87069513" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		<a href="mailto:kimyan.info@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo" style="color:white;">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman" style="color:white;">Jacman</a> © 2014 
+		
+		<a href="http://www.yanjinwen.com/about" target="_blank" title="KimYan" style="color:white;">KimYan</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"kimyan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+
+
+
+  </body>
+</html>
