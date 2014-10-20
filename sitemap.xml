@@ -2,6 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/credits.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/js/openlayers/src/openlayers/lib/Firebug/firebug.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/transformations.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/setup.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/user.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/vendors.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/require.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/glossary.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/intro.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/search.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/privileges.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/faq.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/other.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/index.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/genindex.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/CONTRIBUTING.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/copyright.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/developers.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yanjinwen.com/phpMyAdmin/doc/html/config.html</loc>
+    <lastmod>2014-10-11T12:03:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/2014/10/08/%E5%8D%81%E5%B9%B4%E5%AD%A6%E4%BC%9A%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2014-10-08T08:59:19.000Z</lastmod>
   </url>
@@ -72,17 +167,17 @@
   </url>
   
   <url>
+    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
+    <lastmod>2014-08-02T12:22:12.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yanjinwen.com/resume/README.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.yanjinwen.com/resume/resume-template.html</loc>
-    <lastmod>2014-08-02T12:22:12.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.yanjinwen.com/resume/resume.html</loc>
     <lastmod>2014-08-02T12:22:12.000Z</lastmod>
   </url>
   
